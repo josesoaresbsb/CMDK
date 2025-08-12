@@ -1,0 +1,1212 @@
+{
+  "changes" : [ {
+    "event_info" : {
+      "date" : "12/08/2025 14:13:15",
+      "sequence" : 700032,
+      "date_format" : "dd/mm/rrrr hh24:mi:ss",
+      "dml_operation" : "INSERT",
+      "table_name" : "OBJETO_SISTEMA",
+      "tag_name" : "CMDK",
+      "tasy_user" : "jefsoares",
+      "guid" : "42a58058-d62e-4334-9536-9ed2efb1f1ca"
+    },
+    "server_info" : {
+      "charset" : "AMERICAN_AMERICA.AL32UTF8",
+      "database_version" : "19.0",
+      "instance_name" : "phcdb1"
+    },
+    "session_info" : {
+      "machine" : "0465e5611e89",
+      "os_user" : "root",
+      "tasy_user" : "jefsoares"
+    },
+    "primary_key_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "VVRE_CMDK_ED",
+      "old_value" : null
+    }, {
+      "column_name" : "IE_BANCO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "Oracle",
+      "old_value" : null
+    } ],
+    "column_values" : [ {
+      "column_name" : "DT_CRIACAO",
+      "data_type" : "DATE",
+      "new_value" : "12/08/2025 11:13:15",
+      "old_value" : null
+    }, {
+      "column_name" : "DT_ATUALIZACAO",
+      "data_type" : "DATE",
+      "new_value" : "12/08/2025 11:57:42",
+      "old_value" : null
+    }, {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "VVRE_CMDK_ED",
+      "old_value" : null
+    }, {
+      "column_name" : "IE_MEMORIA",
+      "data_type" : "VARCHAR2",
+      "new_value" : "N",
+      "old_value" : null
+    }, {
+      "column_name" : "DS_APLICACAO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "Tasy",
+      "old_value" : null
+    }, {
+      "column_name" : "NM_USUARIO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "jefsoares",
+      "old_value" : null
+    }, {
+      "column_name" : "IE_GERAR_SCRIPT",
+      "data_type" : "VARCHAR2",
+      "new_value" : "S",
+      "old_value" : null
+    }, {
+      "column_name" : "IE_BANCO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "Oracle",
+      "old_value" : null
+    }, {
+      "column_name" : "IE_TIPO_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "PROCEDURE",
+      "old_value" : null
+    }, {
+      "column_name" : "DS_SCRIPT_CRIACAO",
+      "data_type" : "LONG",
+      "new_value" : "create or replace procedure VVRE_CMDK_ED(\n NR_SEQ_AUTORIZACAO_p  in  number,\n DS_HISTORICO_p    in  varchar2) is\n\n\nDGSY_AUT_CONV_HIST_w DGSY_AUT_CONV_HIST%rowtype;\n\nbegin\nupdate autorizacao_convenio\nset nr_seq_estagio = 21\nwhere nr_sequencia = NR_SEQ_AUTORIZACAO_p;\n\nselect DGSY_AUT_CONV_HIST_seq.nextval\ninto DGSY_AUT_CONV_HIST_w.NR_SEQUENCIA\nfrom dual;\n\nDGSY_AUT_CONV_HIST_w.NR_SEQ_AUTORIZACAO := NR_SEQ_AUTORIZACAO_p;\nDGSY_AUT_CONV_HIST_w.DS_HISTORICO  := DS_HISTORICO_p;\nDGSY_AUT_CONV_HIST_w.IE_TIPO   := 'I';\n\ninsert into DGSY_AUT_CONV_HIST values DGSY_AUT_CONV_HIST_w;\n\ncommit;\nend VVRE_CMDK_ED;/",
+      "old_value" : null
+    }, {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : 10152120,
+      "old_value" : null
+    }, {
+      "column_name" : "IE_CRIPTOGRAFIA",
+      "data_type" : "VARCHAR2",
+      "new_value" : "N",
+      "old_value" : null
+    }, {
+      "column_name" : "DS_LAYER",
+      "data_type" : "VARCHAR2",
+      "new_value" : "CORE.VIVERE",
+      "old_value" : null
+    } ]
+  }, {
+    "event_info" : {
+      "date" : "12/08/2025 14:13:15",
+      "sequence" : 700033,
+      "date_format" : "dd/mm/rrrr hh24:mi:ss",
+      "dml_operation" : "UPDATE",
+      "table_name" : "OBJETO_SISTEMA",
+      "tag_name" : "CMDK",
+      "tasy_user" : "jefsoares",
+      "guid" : "6b8b76e2-611f-41e8-bfd8-578cb39f7c84"
+    },
+    "server_info" : {
+      "charset" : "AMERICAN_AMERICA.AL32UTF8",
+      "database_version" : "19.0",
+      "instance_name" : "phcdb1"
+    },
+    "session_info" : {
+      "machine" : "0465e5611e89",
+      "os_user" : "root",
+      "tasy_user" : "jefsoares"
+    },
+    "primary_key_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "VVRE_CMDK_ED",
+      "old_value" : "VVRE_CMDK_ED"
+    }, {
+      "column_name" : "IE_BANCO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "Oracle",
+      "old_value" : "Oracle"
+    } ],
+    "column_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "VVRE_CMDK_ED",
+      "old_value" : "VVRE_CMDK_ED"
+    }, {
+      "column_name" : "IE_TIPO_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "PROCEDURE",
+      "old_value" : "PROCEDURE"
+    }, {
+      "column_name" : "DS_SCRIPT_CRIACAO",
+      "data_type" : "LONG",
+      "new_value" : "create or replace procedure VVRE_CMDK_ED(\n CD_MATERIAL_P in  number,\n DS_TESTE_P in  varchar2) is\n\n\nVVRE_EDS_CMDK_TESTE_w VVRE_EDS_CMDK.%rowtype;\n\nbegin\nupdate material_estab\nset cd_estabelecimento = 1\nwhere cd_material= cd_material_p;\n\nselect VVRE_EDS_CMDK_SEQ.nextval\ninto VVRE_EDS_CMDK_TESTE_w.NR_SEQUENCIA\nfrom dual;\n\nVVRE_EDS_CMDK_TESTE_w .NR_SEQ_AUTORIZACAO := NR_SEQ_AUTORIZACAO_p;\nVVRE_EDS_CMDK_TESTE_w .DS_HISTORICO  := DS_HISTORICO_p;\n\ninsert into VVRE_EDS_CMDK values VVRE_EDS_CMDK_TESTE_w ;\n\ncommit;\nend VVRE_CMDK_ED;/",
+      "old_value" : "create or replace procedure VVRE_CMDK_ED(\n NR_SEQ_AUTORIZACAO_p  in  number,\n DS_HISTORICO_p    in  varchar2) is\n\n\nDGSY_AUT_CONV_HIST_w DGSY_AUT_CONV_HIST%rowtype;\n\nbegin\nupdate autorizacao_convenio\nset nr_seq_estagio = 21\nwhere nr_sequencia = NR_SEQ_AUTORIZACAO_p;\n\nselect DGSY_AUT_CONV_HIST_seq.nextval\ninto DGSY_AUT_CONV_HIST_w.NR_SEQUENCIA\nfrom dual;\n\nDGSY_AUT_CONV_HIST_w.NR_SEQ_AUTORIZACAO := NR_SEQ_AUTORIZACAO_p;\nDGSY_AUT_CONV_HIST_w.DS_HISTORICO  := DS_HISTORICO_p;\nDGSY_AUT_CONV_HIST_w.IE_TIPO   := 'I';\n\ninsert into DGSY_AUT_CONV_HIST values DGSY_AUT_CONV_HIST_w;\n\ncommit;\nend VVRE_CMDK_ED;/"
+    }, {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : 10152120,
+      "old_value" : 10152120
+    } ]
+  }, {
+    "event_info" : {
+      "date" : "12/08/2025 14:13:15",
+      "sequence" : 700034,
+      "date_format" : "dd/mm/rrrr hh24:mi:ss",
+      "dml_operation" : "UPDATE",
+      "table_name" : "OBJETO_SISTEMA",
+      "tag_name" : "CMDK",
+      "tasy_user" : "jefsoares",
+      "guid" : "6f367a77-3359-4e6f-9eff-1a1eb72cb071"
+    },
+    "server_info" : {
+      "charset" : "AMERICAN_AMERICA.AL32UTF8",
+      "database_version" : "19.0",
+      "instance_name" : "phcdb1"
+    },
+    "session_info" : {
+      "machine" : "0465e5611e89",
+      "os_user" : "root",
+      "tasy_user" : "jefsoares"
+    },
+    "primary_key_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "VVRE_CMDK_ED",
+      "old_value" : "VVRE_CMDK_ED"
+    }, {
+      "column_name" : "IE_BANCO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "Oracle",
+      "old_value" : "Oracle"
+    } ],
+    "column_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "VVRE_CMDK_ED",
+      "old_value" : "VVRE_CMDK_ED"
+    }, {
+      "column_name" : "IE_TIPO_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "PROCEDURE",
+      "old_value" : "PROCEDURE"
+    }, {
+      "column_name" : "DS_SCRIPT_CRIACAO",
+      "data_type" : "LONG",
+      "new_value" : "create or replace procedure VVRE_CMDK_ED(\n CD_MATERIAL_P in  number,\n DS_TESTE_P in  varchar2) is\n\n\nVVRE_EDS_CMDK_TESTE_w VVRE_EDS_CMDK_TESTE_w.%rowtype;\n\nbegin\nupdate material_estab\nset cd_estabelecimento = 1\nwhere cd_material= cd_material_p;\n\nselect VVRE_EDS_CMDK_SEQ.nextval\ninto VVRE_EDS_CMDK_TESTE_w.NR_SEQUENCIA\nfrom dual;\n\nVVRE_EDS_CMDK_TESTE_w .NR_SEQ_AUTORIZACAO := NR_SEQ_AUTORIZACAO_p;\nVVRE_EDS_CMDK_TESTE_w .DS_HISTORICO  := DS_HISTORICO_p;\n\ninsert into VVRE_EDS_CMDK values VVRE_EDS_CMDK_TESTE_w ;\n\ncommit;\nend VVRE_CMDK_ED;/",
+      "old_value" : "create or replace procedure VVRE_CMDK_ED(\n CD_MATERIAL_P in  number,\n DS_TESTE_P in  varchar2) is\n\n\nVVRE_EDS_CMDK_TESTE_w VVRE_EDS_CMDK.%rowtype;\n\nbegin\nupdate material_estab\nset cd_estabelecimento = 1\nwhere cd_material= cd_material_p;\n\nselect VVRE_EDS_CMDK_SEQ.nextval\ninto VVRE_EDS_CMDK_TESTE_w.NR_SEQUENCIA\nfrom dual;\n\nVVRE_EDS_CMDK_TESTE_w .NR_SEQ_AUTORIZACAO := NR_SEQ_AUTORIZACAO_p;\nVVRE_EDS_CMDK_TESTE_w .DS_HISTORICO  := DS_HISTORICO_p;\n\ninsert into VVRE_EDS_CMDK values VVRE_EDS_CMDK_TESTE_w ;\n\ncommit;\nend VVRE_CMDK_ED;/"
+    }, {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : 10152120,
+      "old_value" : 10152120
+    } ]
+  }, {
+    "event_info" : {
+      "date" : "12/08/2025 14:13:15",
+      "sequence" : 700035,
+      "date_format" : "dd/mm/rrrr hh24:mi:ss",
+      "dml_operation" : "UPDATE",
+      "table_name" : "OBJETO_SISTEMA",
+      "tag_name" : "CMDK",
+      "tasy_user" : "jefsoares",
+      "guid" : "38664f05-ab8c-415a-adbf-8b1511998dc5"
+    },
+    "server_info" : {
+      "charset" : "AMERICAN_AMERICA.AL32UTF8",
+      "database_version" : "19.0",
+      "instance_name" : "phcdb1"
+    },
+    "session_info" : {
+      "machine" : "0465e5611e89",
+      "os_user" : "root",
+      "tasy_user" : "jefsoares"
+    },
+    "primary_key_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "VVRE_CMDK_ED",
+      "old_value" : "VVRE_CMDK_ED"
+    }, {
+      "column_name" : "IE_BANCO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "Oracle",
+      "old_value" : "Oracle"
+    } ],
+    "column_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "VVRE_CMDK_ED",
+      "old_value" : "VVRE_CMDK_ED"
+    }, {
+      "column_name" : "IE_TIPO_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "PROCEDURE",
+      "old_value" : "PROCEDURE"
+    }, {
+      "column_name" : "DS_SCRIPT_CRIACAO",
+      "data_type" : "LONG",
+      "new_value" : "create or replace procedure VVRE_CMDK_ED(\n CD_MATERIAL_P in  number,\n DS_TESTE_P in  varchar2) is\n\n\nVVRE_CMDK_ED_w VVRE_CMDK_ED_w.%rowtype;\n\nbegin\nupdate material_estab\nset cd_estabelecimento = 1\nwhere cd_material= cd_material_p;\n\nselect VVRE_EDS_CMDK_SEQ.nextval\ninto VVRE_CMDK_ED_w .NR_SEQUENCIA\nfrom dual;\n\nVVRE_CMDK_ED_w .CD_MATERIAL:= CD_MATERIAL_P ;\nVVRE_CMDK_ED_w .DS_TESTE  := DS_TESTE_P;\n\ninsert into VVRE_EDS_CMDK values VVRE_CMDK_ED_w;\n\ncommit;\nend VVRE_CMDK_ED;/",
+      "old_value" : "create or replace procedure VVRE_CMDK_ED(\n CD_MATERIAL_P in  number,\n DS_TESTE_P in  varchar2) is\n\n\nVVRE_EDS_CMDK_TESTE_w VVRE_EDS_CMDK_TESTE_w.%rowtype;\n\nbegin\nupdate material_estab\nset cd_estabelecimento = 1\nwhere cd_material= cd_material_p;\n\nselect VVRE_EDS_CMDK_SEQ.nextval\ninto VVRE_EDS_CMDK_TESTE_w.NR_SEQUENCIA\nfrom dual;\n\nVVRE_EDS_CMDK_TESTE_w .NR_SEQ_AUTORIZACAO := NR_SEQ_AUTORIZACAO_p;\nVVRE_EDS_CMDK_TESTE_w .DS_HISTORICO  := DS_HISTORICO_p;\n\ninsert into VVRE_EDS_CMDK values VVRE_EDS_CMDK_TESTE_w ;\n\ncommit;\nend VVRE_CMDK_ED;/"
+    }, {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : 10152120,
+      "old_value" : 10152120
+    } ]
+  }, {
+    "event_info" : {
+      "date" : "12/08/2025 14:13:15",
+      "sequence" : 700036,
+      "date_format" : "dd/mm/rrrr hh24:mi:ss",
+      "dml_operation" : "UPDATE",
+      "table_name" : "OBJETO_SISTEMA",
+      "tag_name" : "CMDK",
+      "tasy_user" : "jefsoares",
+      "guid" : "b13ea42a-4f5b-4eaa-82c5-f81abe91d3c3"
+    },
+    "server_info" : {
+      "charset" : "AMERICAN_AMERICA.AL32UTF8",
+      "database_version" : "19.0",
+      "instance_name" : "phcdb1"
+    },
+    "session_info" : {
+      "machine" : "0465e5611e89",
+      "os_user" : "root",
+      "tasy_user" : "jefsoares"
+    },
+    "primary_key_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "VVRE_CMDK_ED",
+      "old_value" : "VVRE_CMDK_ED"
+    }, {
+      "column_name" : "IE_BANCO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "Oracle",
+      "old_value" : "Oracle"
+    } ],
+    "column_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "VVRE_CMDK_ED",
+      "old_value" : "VVRE_CMDK_ED"
+    }, {
+      "column_name" : "IE_TIPO_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "PROCEDURE",
+      "old_value" : "PROCEDURE"
+    }, {
+      "column_name" : "DS_SCRIPT_CRIACAO",
+      "data_type" : "LONG",
+      "new_value" : "create or replace procedure VVRE_CMDK_ED(\n CD_MATERIAL_P in  number,\n DS_TESTE_P in  varchar2) is\n\n\nVVRE_EDS_CMDK_TESTE_w VVRE_EDS_CMDK%ROWTYPE;\n\nbegin\nupdate material_estab\nset cd_estabelecimento = 1\nwhere cd_material= cd_material_p;\n\nselect VVRE_EDS_CMDK_SEQ.nextval\ninto VVRE_CMDK_ED_w .NR_SEQUENCIA\nfrom dual;\n\nVVRE_CMDK_ED_w .CD_MATERIAL:= CD_MATERIAL_P ;\nVVRE_CMDK_ED_w .DS_TESTE  := DS_TESTE_P;\n\ninsert into VVRE_EDS_CMDK values VVRE_CMDK_ED_w;\n\ncommit;\nend VVRE_CMDK_ED;/",
+      "old_value" : "create or replace procedure VVRE_CMDK_ED(\n CD_MATERIAL_P in  number,\n DS_TESTE_P in  varchar2) is\n\n\nVVRE_CMDK_ED_w VVRE_CMDK_ED_w.%rowtype;\n\nbegin\nupdate material_estab\nset cd_estabelecimento = 1\nwhere cd_material= cd_material_p;\n\nselect VVRE_EDS_CMDK_SEQ.nextval\ninto VVRE_CMDK_ED_w .NR_SEQUENCIA\nfrom dual;\n\nVVRE_CMDK_ED_w .CD_MATERIAL:= CD_MATERIAL_P ;\nVVRE_CMDK_ED_w .DS_TESTE  := DS_TESTE_P;\n\ninsert into VVRE_EDS_CMDK values VVRE_CMDK_ED_w;\n\ncommit;\nend VVRE_CMDK_ED;/"
+    }, {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : 10152120,
+      "old_value" : 10152120
+    } ]
+  }, {
+    "event_info" : {
+      "date" : "12/08/2025 14:13:15",
+      "sequence" : 700037,
+      "date_format" : "dd/mm/rrrr hh24:mi:ss",
+      "dml_operation" : "UPDATE",
+      "table_name" : "OBJETO_SISTEMA",
+      "tag_name" : "CMDK",
+      "tasy_user" : "jefsoares",
+      "guid" : "a02f189e-dd59-49b2-9ad0-d1f8abdc06c9"
+    },
+    "server_info" : {
+      "charset" : "AMERICAN_AMERICA.AL32UTF8",
+      "database_version" : "19.0",
+      "instance_name" : "phcdb1"
+    },
+    "session_info" : {
+      "machine" : "0465e5611e89",
+      "os_user" : "root",
+      "tasy_user" : "jefsoares"
+    },
+    "primary_key_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "VVRE_CMDK_ED",
+      "old_value" : "VVRE_CMDK_ED"
+    }, {
+      "column_name" : "IE_BANCO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "Oracle",
+      "old_value" : "Oracle"
+    } ],
+    "column_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "VVRE_CMDK_ED",
+      "old_value" : "VVRE_CMDK_ED"
+    }, {
+      "column_name" : "IE_TIPO_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "PROCEDURE",
+      "old_value" : "PROCEDURE"
+    }, {
+      "column_name" : "DS_SCRIPT_CRIACAO",
+      "data_type" : "LONG",
+      "new_value" : "create or replace procedure VVRE_CMDK_ED(\n CD_MATERIAL_P in  number,\n DS_TESTE_P in  varchar2) is\n\n\nVVRE_EDS_CMDK_TESTE_w VVRE_EDS_CMDK%ROWTYPE;\n\nbegin\nupdate material_estab\nset cd_estabelecimento = 1\nwhere cd_material= cd_material_p;\n\nselect VVRE_EDS_CMDK_SEQ.nextval\ninto VVRE_CMDK_ED_w .NR_SEQUENCIA\nfrom dual;\n\nVVRE_EDS_CMDK_TESTE_w.CD_MATERIAL:= CD_MATERIAL_P ;\nVVRE_EDS_CMDK_TESTE_w.DS_TESTE  := DS_TESTE_P;\n\ninsert into VVRE_EDS_CMDK values VVRE_CMDK_ED_w;\n\ncommit;\nend VVRE_CMDK_ED;/",
+      "old_value" : "create or replace procedure VVRE_CMDK_ED(\n CD_MATERIAL_P in  number,\n DS_TESTE_P in  varchar2) is\n\n\nVVRE_EDS_CMDK_TESTE_w VVRE_EDS_CMDK%ROWTYPE;\n\nbegin\nupdate material_estab\nset cd_estabelecimento = 1\nwhere cd_material= cd_material_p;\n\nselect VVRE_EDS_CMDK_SEQ.nextval\ninto VVRE_CMDK_ED_w .NR_SEQUENCIA\nfrom dual;\n\nVVRE_CMDK_ED_w .CD_MATERIAL:= CD_MATERIAL_P ;\nVVRE_CMDK_ED_w .DS_TESTE  := DS_TESTE_P;\n\ninsert into VVRE_EDS_CMDK values VVRE_CMDK_ED_w;\n\ncommit;\nend VVRE_CMDK_ED;/"
+    }, {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : 10152120,
+      "old_value" : 10152120
+    } ]
+  }, {
+    "event_info" : {
+      "date" : "12/08/2025 14:13:15",
+      "sequence" : 700038,
+      "date_format" : "dd/mm/rrrr hh24:mi:ss",
+      "dml_operation" : "UPDATE",
+      "table_name" : "OBJETO_SISTEMA",
+      "tag_name" : "CMDK",
+      "tasy_user" : "jefsoares",
+      "guid" : "82590c36-7621-4f59-af0c-f97b4df146ac"
+    },
+    "server_info" : {
+      "charset" : "AMERICAN_AMERICA.AL32UTF8",
+      "database_version" : "19.0",
+      "instance_name" : "phcdb1"
+    },
+    "session_info" : {
+      "machine" : "0465e5611e89",
+      "os_user" : "root",
+      "tasy_user" : "jefsoares"
+    },
+    "primary_key_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "VVRE_CMDK_ED",
+      "old_value" : "VVRE_CMDK_ED"
+    }, {
+      "column_name" : "IE_BANCO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "Oracle",
+      "old_value" : "Oracle"
+    } ],
+    "column_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "VVRE_CMDK_ED",
+      "old_value" : "VVRE_CMDK_ED"
+    }, {
+      "column_name" : "IE_TIPO_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "PROCEDURE",
+      "old_value" : "PROCEDURE"
+    }, {
+      "column_name" : "DS_SCRIPT_CRIACAO",
+      "data_type" : "LONG",
+      "new_value" : "create or replace procedure VVRE_CMDK_ED(\n CD_MATERIAL_P in  number,\n DS_TESTE_P in  varchar2) is\n\n\nVVRE_EDS_CMDK_TESTE_w VVRE_EDS_CMDK%ROWTYPE;\n\nbegin\nupdate material_estab\nset cd_estabelecimento = 1\nwhere cd_material= cd_material_p;\n\nselect VVRE_EDS_CMDK_SEQ.nextval\ninto VVRE_CMDK_ED_w .CD_MATERIAL\nfrom dual;\n\nVVRE_EDS_CMDK_TESTE_w.CD_MATERIAL:= CD_MATERIAL_P ;\nVVRE_EDS_CMDK_TESTE_w.DS_TESTE  := DS_TESTE_P;\n\ninsert into VVRE_EDS_CMDK values VVRE_EDS_CMDK_TESTE_w;\n\ncommit;\nend VVRE_CMDK_ED;/",
+      "old_value" : "create or replace procedure VVRE_CMDK_ED(\n CD_MATERIAL_P in  number,\n DS_TESTE_P in  varchar2) is\n\n\nVVRE_EDS_CMDK_TESTE_w VVRE_EDS_CMDK%ROWTYPE;\n\nbegin\nupdate material_estab\nset cd_estabelecimento = 1\nwhere cd_material= cd_material_p;\n\nselect VVRE_EDS_CMDK_SEQ.nextval\ninto VVRE_CMDK_ED_w .NR_SEQUENCIA\nfrom dual;\n\nVVRE_EDS_CMDK_TESTE_w.CD_MATERIAL:= CD_MATERIAL_P ;\nVVRE_EDS_CMDK_TESTE_w.DS_TESTE  := DS_TESTE_P;\n\ninsert into VVRE_EDS_CMDK values VVRE_CMDK_ED_w;\n\ncommit;\nend VVRE_CMDK_ED;/"
+    }, {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : 10152120,
+      "old_value" : 10152120
+    } ]
+  }, {
+    "event_info" : {
+      "date" : "12/08/2025 14:13:15",
+      "sequence" : 700039,
+      "date_format" : "dd/mm/rrrr hh24:mi:ss",
+      "dml_operation" : "UPDATE",
+      "table_name" : "OBJETO_SISTEMA",
+      "tag_name" : "CMDK",
+      "tasy_user" : "jefsoares",
+      "guid" : "801dcb73-1700-4802-b599-124359179043"
+    },
+    "server_info" : {
+      "charset" : "AMERICAN_AMERICA.AL32UTF8",
+      "database_version" : "19.0",
+      "instance_name" : "phcdb1"
+    },
+    "session_info" : {
+      "machine" : "0465e5611e89",
+      "os_user" : "root",
+      "tasy_user" : "jefsoares"
+    },
+    "primary_key_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "VVRE_CMDK_ED",
+      "old_value" : "VVRE_CMDK_ED"
+    }, {
+      "column_name" : "IE_BANCO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "Oracle",
+      "old_value" : "Oracle"
+    } ],
+    "column_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "VVRE_CMDK_ED",
+      "old_value" : "VVRE_CMDK_ED"
+    }, {
+      "column_name" : "IE_TIPO_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "PROCEDURE",
+      "old_value" : "PROCEDURE"
+    }, {
+      "column_name" : "DS_SCRIPT_CRIACAO",
+      "data_type" : "LONG",
+      "new_value" : "create or replace procedure VVRE_CMDK_ED(\n CD_MATERIAL_P in  number,\n DS_TESTE_P in  varchar2) is\n\nbegin\n\ninsert into VVRE_EDS_CMDK (CD_MATERIAL,DS_TESTE) values (CD_MATERIAL_P,DS_TESTE_P);\n\ncommit;\nend VVRE_CMDK_ED;/",
+      "old_value" : "create or replace procedure VVRE_CMDK_ED(\n CD_MATERIAL_P in  number,\n DS_TESTE_P in  varchar2) is\n\n\nVVRE_EDS_CMDK_TESTE_w VVRE_EDS_CMDK%ROWTYPE;\n\nbegin\nupdate material_estab\nset cd_estabelecimento = 1\nwhere cd_material= cd_material_p;\n\nselect VVRE_EDS_CMDK_SEQ.nextval\ninto VVRE_CMDK_ED_w .CD_MATERIAL\nfrom dual;\n\nVVRE_EDS_CMDK_TESTE_w.CD_MATERIAL:= CD_MATERIAL_P ;\nVVRE_EDS_CMDK_TESTE_w.DS_TESTE  := DS_TESTE_P;\n\ninsert into VVRE_EDS_CMDK values VVRE_EDS_CMDK_TESTE_w;\n\ncommit;\nend VVRE_CMDK_ED;/"
+    }, {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : 10152120,
+      "old_value" : 10152120
+    } ]
+  }, {
+    "event_info" : {
+      "date" : "12/08/2025 14:13:15",
+      "sequence" : 2000,
+      "date_format" : "dd/mm/rrrr hh24:mi:ss",
+      "dml_operation" : "INSERT",
+      "table_name" : "DIC_EXPRESSAO",
+      "tag_name" : "CMDK",
+      "tasy_user" : "jefsoares",
+      "guid" : "aff490eb-b129-438c-865e-a4fa265f7cb0"
+    },
+    "server_info" : {
+      "charset" : "AMERICAN_AMERICA.AL32UTF8",
+      "database_version" : "19.0",
+      "instance_name" : "phcdb1"
+    },
+    "session_info" : {
+      "machine" : "0465e5611e89",
+      "os_user" : "root",
+      "tasy_user" : "jefsoares"
+    },
+    "primary_key_values" : [ {
+      "column_name" : "CD_EXPRESSAO",
+      "data_type" : "NUMBER",
+      "new_value" : 1138672,
+      "old_value" : null
+    } ],
+    "column_values" : [ {
+      "column_name" : "CD_EXPRESSAO",
+      "data_type" : "NUMBER",
+      "new_value" : 1138672,
+      "old_value" : null
+    }, {
+      "column_name" : "NM_USUARIO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "jefsoares",
+      "old_value" : null
+    }, {
+      "column_name" : "DT_ATUALIZACAO",
+      "data_type" : "DATE",
+      "new_value" : "12/08/2025 12:38:41",
+      "old_value" : null
+    }, {
+      "column_name" : "DS_GLOSSARIO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "CMDK - ED - Registro de Materiais",
+      "old_value" : null
+    }, {
+      "column_name" : "DT_ATUALIZACAO_NREC",
+      "data_type" : "DATE",
+      "new_value" : "12/08/2025 12:38:41",
+      "old_value" : null
+    }, {
+      "column_name" : "NM_USUARIO_NREC",
+      "data_type" : "VARCHAR2",
+      "new_value" : "jefsoares",
+      "old_value" : null
+    } ]
+  }, {
+    "event_info" : {
+      "date" : "12/08/2025 14:13:15",
+      "sequence" : 2001,
+      "date_format" : "dd/mm/rrrr hh24:mi:ss",
+      "dml_operation" : "INSERT",
+      "table_name" : "DIC_EXPRESSAO_CUSTOM",
+      "tag_name" : "CMDK",
+      "tasy_user" : "jefsoares",
+      "guid" : "0df51ff9-4600-4f65-b6ee-d7a4d16d2071"
+    },
+    "server_info" : {
+      "charset" : "AMERICAN_AMERICA.AL32UTF8",
+      "database_version" : "19.0",
+      "instance_name" : "phcdb1"
+    },
+    "session_info" : {
+      "machine" : "0465e5611e89",
+      "os_user" : "root",
+      "tasy_user" : "jefsoares"
+    },
+    "primary_key_values" : [ {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : 18454,
+      "old_value" : null
+    } ],
+    "column_values" : [ {
+      "column_name" : "IE_SITUACAO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "A",
+      "old_value" : null
+    }, {
+      "column_name" : "DS_LOCALE",
+      "data_type" : "VARCHAR2",
+      "new_value" : "en_US",
+      "old_value" : null
+    }, {
+      "column_name" : "DS_IDIOMA",
+      "data_type" : "VARCHAR2",
+      "new_value" : "en",
+      "old_value" : null
+    }, {
+      "column_name" : "DS_EXPRESSAO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "CMDK - ED - Registro de Materiais",
+      "old_value" : null
+    }, {
+      "column_name" : "CD_EXPRESSAO",
+      "data_type" : "NUMBER",
+      "new_value" : 1138672,
+      "old_value" : null
+    }, {
+      "column_name" : "DS_LAYER",
+      "data_type" : "VARCHAR2",
+      "new_value" : "CORE.VIVERE",
+      "old_value" : null
+    }, {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : 18454,
+      "old_value" : null
+    }, {
+      "column_name" : "DT_ATUALIZACAO",
+      "data_type" : "DATE",
+      "new_value" : "12/08/2025 12:38:41",
+      "old_value" : null
+    }, {
+      "column_name" : "NM_USUARIO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "jefsoares",
+      "old_value" : null
+    }, {
+      "column_name" : "DT_ATUALIZACAO_NREC",
+      "data_type" : "DATE",
+      "new_value" : "12/08/2025 12:38:41",
+      "old_value" : null
+    }, {
+      "column_name" : "NM_USUARIO_NREC",
+      "data_type" : "VARCHAR2",
+      "new_value" : "jefsoares",
+      "old_value" : null
+    } ]
+  }, {
+    "event_info" : {
+      "date" : "12/08/2025 14:13:15",
+      "sequence" : 2050,
+      "date_format" : "dd/mm/rrrr hh24:mi:ss",
+      "dml_operation" : "UPDATE",
+      "table_name" : "DIC_EXPRESSAO",
+      "tag_name" : "CMDK",
+      "tasy_user" : "jefsoares",
+      "guid" : "301e7c73-7d93-4f5b-8cc4-8a250d2ff02a"
+    },
+    "server_info" : {
+      "charset" : "AMERICAN_AMERICA.AL32UTF8",
+      "database_version" : "19.0",
+      "instance_name" : "phcdb1"
+    },
+    "session_info" : {
+      "machine" : "0465e5611e89",
+      "os_user" : "root",
+      "tasy_user" : "jefsoares"
+    },
+    "primary_key_values" : [ {
+      "column_name" : "CD_EXPRESSAO",
+      "data_type" : "NUMBER",
+      "new_value" : 1138672,
+      "old_value" : 1138672
+    } ],
+    "column_values" : [ {
+      "column_name" : "CD_EXPRESSAO",
+      "data_type" : "NUMBER",
+      "new_value" : 1138672,
+      "old_value" : 1138672
+    } ]
+  }, {
+    "event_info" : {
+      "date" : "12/08/2025 14:13:15",
+      "sequence" : 2051,
+      "date_format" : "dd/mm/rrrr hh24:mi:ss",
+      "dml_operation" : "UPDATE",
+      "table_name" : "DIC_EXPRESSAO_CUSTOM",
+      "tag_name" : "CMDK",
+      "tasy_user" : "jefsoares",
+      "guid" : "b2224fbb-8f24-4041-aec8-c1439dea2692"
+    },
+    "server_info" : {
+      "charset" : "AMERICAN_AMERICA.AL32UTF8",
+      "database_version" : "19.0",
+      "instance_name" : "phcdb1"
+    },
+    "session_info" : {
+      "machine" : "0465e5611e89",
+      "os_user" : "root",
+      "tasy_user" : "jefsoares"
+    },
+    "primary_key_values" : [ {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : 18454,
+      "old_value" : 18454
+    } ],
+    "column_values" : [ {
+      "column_name" : "DS_LOCALE",
+      "data_type" : "VARCHAR2",
+      "new_value" : "pt_BR",
+      "old_value" : "en_US"
+    }, {
+      "column_name" : "DS_IDIOMA",
+      "data_type" : "VARCHAR2",
+      "new_value" : "pt",
+      "old_value" : "en"
+    }, {
+      "column_name" : "CD_EXPRESSAO",
+      "data_type" : "NUMBER",
+      "new_value" : 1138672,
+      "old_value" : 1138672
+    }, {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : 18454,
+      "old_value" : 18454
+    }, {
+      "column_name" : "DT_ATUALIZACAO_NREC",
+      "data_type" : "DATE",
+      "new_value" : "12/08/2025 12:39:03",
+      "old_value" : "12/08/2025 12:38:41"
+    } ]
+  }, {
+    "event_info" : {
+      "date" : "12/08/2025 14:13:15",
+      "sequence" : 2100,
+      "date_format" : "dd/mm/rrrr hh24:mi:ss",
+      "dml_operation" : "INSERT",
+      "table_name" : "DIC_EXPRESSAO",
+      "tag_name" : "CMDK",
+      "tasy_user" : "jefsoares",
+      "guid" : "3941e342-faeb-4744-a0b6-de188b81c528"
+    },
+    "server_info" : {
+      "charset" : "AMERICAN_AMERICA.AL32UTF8",
+      "database_version" : "19.0",
+      "instance_name" : "phcdb1"
+    },
+    "session_info" : {
+      "machine" : "0465e5611e89",
+      "os_user" : "root",
+      "tasy_user" : "jefsoares"
+    },
+    "primary_key_values" : [ {
+      "column_name" : "CD_EXPRESSAO",
+      "data_type" : "NUMBER",
+      "new_value" : 1138691,
+      "old_value" : null
+    } ],
+    "column_values" : [ {
+      "column_name" : "CD_EXPRESSAO",
+      "data_type" : "NUMBER",
+      "new_value" : 1138691,
+      "old_value" : null
+    }, {
+      "column_name" : "NM_USUARIO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "jefsoares",
+      "old_value" : null
+    }, {
+      "column_name" : "DT_ATUALIZACAO",
+      "data_type" : "DATE",
+      "new_value" : "12/08/2025 13:01:06",
+      "old_value" : null
+    }, {
+      "column_name" : "DS_GLOSSARIO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "CMDK - ED - Bionexof",
+      "old_value" : null
+    }, {
+      "column_name" : "DT_ATUALIZACAO_NREC",
+      "data_type" : "DATE",
+      "new_value" : "12/08/2025 13:01:06",
+      "old_value" : null
+    }, {
+      "column_name" : "NM_USUARIO_NREC",
+      "data_type" : "VARCHAR2",
+      "new_value" : "jefsoares",
+      "old_value" : null
+    } ]
+  }, {
+    "event_info" : {
+      "date" : "12/08/2025 14:13:15",
+      "sequence" : 2101,
+      "date_format" : "dd/mm/rrrr hh24:mi:ss",
+      "dml_operation" : "INSERT",
+      "table_name" : "DIC_EXPRESSAO_CUSTOM",
+      "tag_name" : "CMDK",
+      "tasy_user" : "jefsoares",
+      "guid" : "90d15702-a9ab-496b-b5e4-04111e6349fe"
+    },
+    "server_info" : {
+      "charset" : "AMERICAN_AMERICA.AL32UTF8",
+      "database_version" : "19.0",
+      "instance_name" : "phcdb1"
+    },
+    "session_info" : {
+      "machine" : "0465e5611e89",
+      "os_user" : "root",
+      "tasy_user" : "jefsoares"
+    },
+    "primary_key_values" : [ {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : 18455,
+      "old_value" : null
+    } ],
+    "column_values" : [ {
+      "column_name" : "IE_SITUACAO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "A",
+      "old_value" : null
+    }, {
+      "column_name" : "DS_LOCALE",
+      "data_type" : "VARCHAR2",
+      "new_value" : "en_US",
+      "old_value" : null
+    }, {
+      "column_name" : "DS_IDIOMA",
+      "data_type" : "VARCHAR2",
+      "new_value" : "en",
+      "old_value" : null
+    }, {
+      "column_name" : "DS_EXPRESSAO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "CMDK - ED - Bionexo",
+      "old_value" : null
+    }, {
+      "column_name" : "CD_EXPRESSAO",
+      "data_type" : "NUMBER",
+      "new_value" : 1138691,
+      "old_value" : null
+    }, {
+      "column_name" : "DS_LAYER",
+      "data_type" : "VARCHAR2",
+      "new_value" : "CORE.VIVERE",
+      "old_value" : null
+    }, {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : 18455,
+      "old_value" : null
+    }, {
+      "column_name" : "DT_ATUALIZACAO",
+      "data_type" : "DATE",
+      "new_value" : "12/08/2025 13:01:06",
+      "old_value" : null
+    }, {
+      "column_name" : "NM_USUARIO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "jefsoares",
+      "old_value" : null
+    }, {
+      "column_name" : "DT_ATUALIZACAO_NREC",
+      "data_type" : "DATE",
+      "new_value" : "12/08/2025 13:01:06",
+      "old_value" : null
+    }, {
+      "column_name" : "NM_USUARIO_NREC",
+      "data_type" : "VARCHAR2",
+      "new_value" : "jefsoares",
+      "old_value" : null
+    } ]
+  }, {
+    "event_info" : {
+      "date" : "12/08/2025 14:13:15",
+      "sequence" : 2150,
+      "date_format" : "dd/mm/rrrr hh24:mi:ss",
+      "dml_operation" : "UPDATE",
+      "table_name" : "DIC_EXPRESSAO",
+      "tag_name" : "CMDK",
+      "tasy_user" : "jefsoares",
+      "guid" : "2c6ad3dd-b5d6-4d92-8ff6-36c3b27341d8"
+    },
+    "server_info" : {
+      "charset" : "AMERICAN_AMERICA.AL32UTF8",
+      "database_version" : "19.0",
+      "instance_name" : "phcdb1"
+    },
+    "session_info" : {
+      "machine" : "0465e5611e89",
+      "os_user" : "root",
+      "tasy_user" : "jefsoares"
+    },
+    "primary_key_values" : [ {
+      "column_name" : "CD_EXPRESSAO",
+      "data_type" : "NUMBER",
+      "new_value" : 1138691,
+      "old_value" : 1138691
+    } ],
+    "column_values" : [ {
+      "column_name" : "CD_EXPRESSAO",
+      "data_type" : "NUMBER",
+      "new_value" : 1138691,
+      "old_value" : 1138691
+    } ]
+  }, {
+    "event_info" : {
+      "date" : "12/08/2025 14:13:15",
+      "sequence" : 2151,
+      "date_format" : "dd/mm/rrrr hh24:mi:ss",
+      "dml_operation" : "UPDATE",
+      "table_name" : "DIC_EXPRESSAO_CUSTOM",
+      "tag_name" : "CMDK",
+      "tasy_user" : "jefsoares",
+      "guid" : "0be1e5ec-106d-406a-8e2f-555cab2df7c7"
+    },
+    "server_info" : {
+      "charset" : "AMERICAN_AMERICA.AL32UTF8",
+      "database_version" : "19.0",
+      "instance_name" : "phcdb1"
+    },
+    "session_info" : {
+      "machine" : "0465e5611e89",
+      "os_user" : "root",
+      "tasy_user" : "jefsoares"
+    },
+    "primary_key_values" : [ {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : 18455,
+      "old_value" : 18455
+    } ],
+    "column_values" : [ {
+      "column_name" : "DS_LOCALE",
+      "data_type" : "VARCHAR2",
+      "new_value" : "pt_BR",
+      "old_value" : "en_US"
+    }, {
+      "column_name" : "DS_IDIOMA",
+      "data_type" : "VARCHAR2",
+      "new_value" : "pt",
+      "old_value" : "en"
+    }, {
+      "column_name" : "CD_EXPRESSAO",
+      "data_type" : "NUMBER",
+      "new_value" : 1138691,
+      "old_value" : 1138691
+    }, {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : 18455,
+      "old_value" : 18455
+    }, {
+      "column_name" : "DT_ATUALIZACAO_NREC",
+      "data_type" : "DATE",
+      "new_value" : "12/08/2025 13:01:34",
+      "old_value" : "12/08/2025 13:01:06"
+    } ]
+  }, {
+    "event_info" : {
+      "date" : "12/08/2025 14:13:15",
+      "sequence" : 500044,
+      "date_format" : "dd/mm/rrrr hh24:mi:ss",
+      "dml_operation" : "DELETE",
+      "table_name" : "TIPO_LOCALIZAR_ATRIBUTO",
+      "tag_name" : "CMDK",
+      "tasy_user" : "jefsoares",
+      "guid" : "f8687146-9fbe-42a1-9b18-27237d6ecf5b"
+    },
+    "server_info" : {
+      "charset" : "AMERICAN_AMERICA.AL32UTF8",
+      "database_version" : "19.0",
+      "instance_name" : "phcdb1"
+    },
+    "session_info" : {
+      "machine" : "0465e5611e89",
+      "os_user" : "root",
+      "tasy_user" : "jefsoares"
+    },
+    "primary_key_values" : [ {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : null,
+      "old_value" : 38596
+    } ],
+    "column_values" : [ {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : null,
+      "old_value" : 38596
+    }, {
+      "column_name" : "DT_ATUALIZACAO",
+      "data_type" : "DATE",
+      "new_value" : null,
+      "old_value" : "12/08/2025 14:09:34"
+    }, {
+      "column_name" : "NM_USUARIO",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : "jefsoares"
+    }, {
+      "column_name" : "NR_SEQ_TIPO_LOCALIZAR",
+      "data_type" : "NUMBER",
+      "new_value" : null,
+      "old_value" : 23147
+    }, {
+      "column_name" : "QT_ALTURA",
+      "data_type" : "NUMBER",
+      "new_value" : null,
+      "old_value" : "21"
+    }, {
+      "column_name" : "NM_ATRIBUTO",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : "DS"
+    }, {
+      "column_name" : "IE_GRID",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : "N"
+    }, {
+      "column_name" : "IE_TIPO_SELECAO",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : ""
+    }, {
+      "column_name" : "IE_RESULTADO",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : "N"
+    }, {
+      "column_name" : "DS_ITEM",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : "Descri\u00e7\u00e3o"
+    }, {
+      "column_name" : "NR_SEQ_APRESENT",
+      "data_type" : "NUMBER",
+      "new_value" : null,
+      "old_value" : 2
+    }, {
+      "column_name" : "IE_TIPO_ATRIBUTO",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : "VARCHAR2"
+    }, {
+      "column_name" : "IE_FOCUS",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : "N"
+    }, {
+      "column_name" : "QT_DESLOCAMENTO",
+      "data_type" : "NUMBER",
+      "new_value" : null,
+      "old_value" : "0"
+    }, {
+      "column_name" : "NR_COLUNAS",
+      "data_type" : "NUMBER",
+      "new_value" : null,
+      "old_value" : "0"
+    }, {
+      "column_name" : "IE_IGNORAR_ACENTUACAO",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : "N"
+    }, {
+      "column_name" : "IE_OCULTAR_RESTRICAO",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : "N"
+    }, {
+      "column_name" : "IE_TIPO_RESTRICAO",
+      "data_type" : "NUMBER",
+      "new_value" : null,
+      "old_value" : 1
+    }, {
+      "column_name" : "IE_DESC_RESULT",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : "N"
+    }, {
+      "column_name" : "IE_UTILIZA_TARJA_MAGNETICA",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : "N"
+    }, {
+      "column_name" : "NM_USUARIO_NREC",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : "jefsoares"
+    }, {
+      "column_name" : "DT_ATUALIZACAO_NREC",
+      "data_type" : "DATE",
+      "new_value" : null,
+      "old_value" : "12/08/2025 14:09:34"
+    }, {
+      "column_name" : "IE_INTERVALO_DATA",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : "N"
+    } ]
+  }, {
+    "event_info" : {
+      "date" : "12/08/2025 14:13:15",
+      "sequence" : 500045,
+      "date_format" : "dd/mm/rrrr hh24:mi:ss",
+      "dml_operation" : "DELETE",
+      "table_name" : "TIPO_LOCALIZAR_ATRIBUTO",
+      "tag_name" : "CMDK",
+      "tasy_user" : "jefsoares",
+      "guid" : "fc79de22-1a8e-4a26-a714-7e6bfa1326b8"
+    },
+    "server_info" : {
+      "charset" : "AMERICAN_AMERICA.AL32UTF8",
+      "database_version" : "19.0",
+      "instance_name" : "phcdb1"
+    },
+    "session_info" : {
+      "machine" : "0465e5611e89",
+      "os_user" : "root",
+      "tasy_user" : "jefsoares"
+    },
+    "primary_key_values" : [ {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : null,
+      "old_value" : 38594
+    } ],
+    "column_values" : [ {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : null,
+      "old_value" : 38594
+    }, {
+      "column_name" : "DT_ATUALIZACAO",
+      "data_type" : "DATE",
+      "new_value" : null,
+      "old_value" : "12/08/2025 14:09:14"
+    }, {
+      "column_name" : "NM_USUARIO",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : "jefsoares"
+    }, {
+      "column_name" : "NR_SEQ_TIPO_LOCALIZAR",
+      "data_type" : "NUMBER",
+      "new_value" : null,
+      "old_value" : 23147
+    }, {
+      "column_name" : "QT_ALTURA",
+      "data_type" : "NUMBER",
+      "new_value" : null,
+      "old_value" : "21"
+    }, {
+      "column_name" : "NM_ATRIBUTO",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : "CD"
+    }, {
+      "column_name" : "IE_GRID",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : "N"
+    }, {
+      "column_name" : "IE_TIPO_SELECAO",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : ""
+    }, {
+      "column_name" : "IE_RESULTADO",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : "N"
+    }, {
+      "column_name" : "DS_ITEM",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : "Codigo"
+    }, {
+      "column_name" : "NR_SEQ_APRESENT",
+      "data_type" : "NUMBER",
+      "new_value" : null,
+      "old_value" : 1
+    }, {
+      "column_name" : "IE_TIPO_ATRIBUTO",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : "NUMBER"
+    }, {
+      "column_name" : "IE_FOCUS",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : "N"
+    }, {
+      "column_name" : "QT_DESLOCAMENTO",
+      "data_type" : "NUMBER",
+      "new_value" : null,
+      "old_value" : "0"
+    }, {
+      "column_name" : "NR_COLUNAS",
+      "data_type" : "NUMBER",
+      "new_value" : null,
+      "old_value" : "0"
+    }, {
+      "column_name" : "IE_IGNORAR_ACENTUACAO",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : "N"
+    }, {
+      "column_name" : "IE_OCULTAR_RESTRICAO",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : "N"
+    }, {
+      "column_name" : "IE_TIPO_RESTRICAO",
+      "data_type" : "NUMBER",
+      "new_value" : null,
+      "old_value" : 1
+    }, {
+      "column_name" : "IE_DESC_RESULT",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : "N"
+    }, {
+      "column_name" : "IE_UTILIZA_TARJA_MAGNETICA",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : "N"
+    }, {
+      "column_name" : "NM_USUARIO_NREC",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : "jefsoares"
+    }, {
+      "column_name" : "DT_ATUALIZACAO_NREC",
+      "data_type" : "DATE",
+      "new_value" : null,
+      "old_value" : "12/08/2025 14:09:14"
+    }, {
+      "column_name" : "IE_INTERVALO_DATA",
+      "data_type" : "VARCHAR2",
+      "new_value" : null,
+      "old_value" : "N"
+    } ]
+  } ]
+}
