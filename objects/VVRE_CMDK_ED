@@ -1,0 +1,10 @@
+create or replace procedure VVRE_CMDK_ED(
+ CD_MATERIAL_P in  number,
+ DS_TESTE_P in  varchar2) is
+
+begin
+
+insert into VVRE_EDS_CMDK (NR_SEQUENCIA, CD_MATERIAL,DS_TESTE) values (VVRE_EDS_CMDK_SEQ.NEXTVAL,CD_MATERIAL_P,DS_TESTE_P);
+
+commit;
+end VVRE_CMDK_ED;
