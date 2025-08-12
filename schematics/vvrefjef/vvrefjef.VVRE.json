@@ -1,0 +1,249 @@
+{
+  "identifier" : "VVRE",
+  "migrations" : [ {
+    "op" : "add",
+    "path" : "/",
+    "value" : {
+      "avoidMemoryLeaks" : true,
+      "dialogs" : [ ],
+      "disableDeveloperBar" : false,
+      "experimentalFeatures" : { },
+      "externalAccessItens" : {
+        "ALL_FEATURES" : [ ],
+        "SPOTLIGHT_FEATURES" : [ ]
+      },
+      "featureCode" : 99676,
+      "globalPopups" : [ ],
+      "metadataToFile" : true,
+      "noDataExpressionCode" : 397569,
+      "children" : [ {
+        "allowCmdkCustomization" : true,
+        "restrictPrimaryLevel" : "N",
+        "restrictSecondaryLevel" : "N",
+        "restrictTertiaryLevel" : "N",
+        "children" : [ {
+          "children" : [ {
+            "children" : [ {
+              "children" : [ {
+                "children" : [ {
+                  "children" : [ {
+                    "children" : [ ],
+                    "cmdkMetadataCustomization" : false,
+                    "code" : 9592948,
+                    "componentType" : "WFILTRO",
+                    "customProperties" : {
+                      "enableMultiFilters" : "N"
+                    },
+                    "description" : "Filter",
+                    "dictionaryCode" : 937612262,
+                    "experimentalFeatures" : {
+                      "experimentalForm" : false
+                    },
+                    "metadataFile" : true,
+                    "objectType" : "COMPONENT",
+                    "params" : [ ],
+                    "parentObjectCode" : 9551319,
+                    "properties" : {
+                      "closeAfterSearch" : true,
+                      "lazyLoadDetail" : false,
+                      "modal" : false,
+                      "openOnShow" : false,
+                      "orientation" : "TOP",
+                      "responsive" : false
+                    }
+                  }, {
+                    "code" : 16959743,
+                    "componentType" : "WPOPUP",
+                    "description" : "Popup menu material",
+                    "displayOrder" : 1,
+                    "menuItems" : [ {
+                      "aiContextMenu" : false,
+                      "alignment" : "E",
+                      "children" : [ ],
+                      "code" : 16989173,
+                      "componentType" : "MENUITEM",
+                      "enabled" : true,
+                      "events" : [ ],
+                      "expressionCode" : 291339,
+                      "menuCode" : 16959743,
+                      "metadataFile" : false,
+                      "name" : "History ",
+                      "objectType" : "COMPONENT",
+                      "order" : 1,
+                      "parentObjectCode" : 16959743,
+                      "rules" : [ ],
+                      "text" : "History ",
+                      "topList" : false,
+                      "type" : "STANDARD",
+                      "visible" : true
+                    } ],
+                    "objectType" : "COMPONENT",
+                    "parentObjectCode" : 9551319,
+                    "popUpHandle" : "N"
+                  } ],
+                  "cmdkMetadataCustomization" : false,
+                  "code" : 9551319,
+                  "componentType" : "WCPANEL",
+                  "customProperties" : {
+                    "showDynamicReport" : "N"
+                  },
+                  "description" : "Dados Materiais",
+                  "dictionaryCode" : 9131838,
+                  "displayOrder" : 1,
+                  "legends" : [ ],
+                  "metadataFile" : true,
+                  "objectType" : "COMPONENT",
+                  "params" : [ ],
+                  "parentObjectCode" : 9538363,
+                  "properties" : {
+                    "autoCreateChild" : false,
+                    "editableGrid" : true,
+                    "emptyActivation" : false,
+                    "multiSelection" : true,
+                    "paginationType" : "P",
+                    "reportConfigVisible" : false,
+                    "saveGridColumnOrder" : false,
+                    "selectFirstRow" : false,
+                    "unificarCountRegistros" : false,
+                    "useNewGrid" : true,
+                    "usePagination" : true
+                  },
+                  "reports" : [ ]
+                } ],
+                "code" : 9538363,
+                "description" : "Region 0",
+                "displayOrder" : 2,
+                "objectType" : "REGION",
+                "parentObjectCode" : 9538362,
+                "tabGroupSelection" : false
+              } ],
+              "code" : 9538362,
+              "description" : "Master region",
+              "masterRegionType" : "LAYOUT_A",
+              "objectType" : "MASTER_REGION",
+              "parentObjectCode" : 9085795
+            } ],
+            "code" : 9085795,
+            "description" : "Panel",
+            "displayOrder" : 1,
+            "expressionCode" : 314879,
+            "expressionDescription" : "Panel",
+            "objectType" : "PANEL",
+            "panelWidth" : 9,
+            "parentObjectCode" : 9085794
+          }, {
+            "children" : [ {
+              "children" : [ {
+                "children" : [ {
+                  "checkParentsRelease" : false,
+                  "children" : [ ],
+                  "cmdkMetadataCustomization" : false,
+                  "code" : 9844123,
+                  "componentType" : "WDBPANEL",
+                  "crudRules" : [ ],
+                  "customProperties" : {
+                    "allowBatchSignature" : "N",
+                    "showDynamicReport" : "N",
+                    "withoutCache" : "N"
+                  },
+                  "description" : "DbPanel",
+                  "displayOrder" : 1,
+                  "isMaster" : false,
+                  "legends" : [ ],
+                  "masterObjectCode" : 0,
+                  "metadataFile" : true,
+                  "objectType" : "COMPONENT",
+                  "params" : [ {
+                    "code" : 10686016,
+                    "criteria" : 10478008,
+                    "function" : 0,
+                    "masterCode" : 9551319,
+                    "masterName" : "CD_MATERIAL",
+                    "originParam" : "OBJECT",
+                    "parameterCode" : 0,
+                    "parameterName" : "CD_MATERIAL",
+                    "parameterSeq" : 0,
+                    "parentObjectCode" : 9844123
+                  } ],
+                  "parentObjectCode" : 9610913,
+                  "properties" : {
+                    "action" : "",
+                    "activateOnDetail" : true,
+                    "autoCreateChild" : false,
+                    "cacheDetailViews" : false,
+                    "checkReportRelease" : true,
+                    "confirmReleaseRecord" : false,
+                    "destroyDetail" : false,
+                    "editableGrid" : false,
+                    "emptyActivation" : false,
+                    "gridWhenSave" : true,
+                    "lazyLoadDetail" : false,
+                    "multiSelection" : false,
+                    "onlyDetail" : false,
+                    "pageSize" : 0,
+                    "paginationType" : "P",
+                    "qtMaxRecord" : 0,
+                    "readOnlyType" : "N",
+                    "reportConfigVisible" : false,
+                    "responsive" : false,
+                    "saveGridColumnOrder" : false,
+                    "selectFirstRow" : false,
+                    "unificarCountRegistros" : true,
+                    "useNewGrid" : true,
+                    "usePagination" : true
+                  },
+                  "reports" : [ ],
+                  "signatureConfigured" : false,
+                  "viewActivator" : 10478008,
+                  "viewCode" : 9944916
+                } ],
+                "code" : 9610913,
+                "description" : "Region 0",
+                "displayOrder" : 1,
+                "objectType" : "REGION",
+                "parentObjectCode" : 9610912
+              } ],
+              "code" : 9610912,
+              "description" : "Master region",
+              "masterRegionType" : "LAYOUT_A",
+              "objectType" : "MASTER_REGION",
+              "parentObjectCode" : 9085796
+            } ],
+            "code" : 9085796,
+            "description" : "Panel",
+            "displayOrder" : 2,
+            "expressionCode" : 314879,
+            "expressionDescription" : "Panel",
+            "objectType" : "PANEL",
+            "panelWidth" : 3,
+            "parentObjectCode" : 9085794
+          } ],
+          "code" : 9085794,
+          "componentType" : "WSCH",
+          "description" : "Schematic - 12",
+          "objectType" : "SCHEMATIC",
+          "parentObjectCode" : 9070429
+        } ],
+        "code" : 9070429,
+        "configurable" : true,
+        "hasObjSchemRules" : false,
+        "description" : "Test9999999",
+        "displayOrder" : 1,
+        "expressionCode" : 1,
+        "expressionDescription" : "Test9999999",
+        "objectType" : "DROP_DOWN_MENU",
+        "parentObjectCode" : 99676,
+        "topList" : false,
+        "visible" : "S"
+      } ],
+      "code" : 99676,
+      "description" : "Dropdown menu",
+      "navigatorType" : "DROP_DOWN_MENU",
+      "objectType" : "NAVIGATOR",
+      "parentObjectCode" : 0,
+      "selectedNavigatorItem" : 9070429,
+      "version" : "1.7.0"
+    }
+  } ],
+  "type" : "PARTNER"
+}
