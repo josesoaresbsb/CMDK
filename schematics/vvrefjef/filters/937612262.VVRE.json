@@ -35,7 +35,7 @@
         "lineBreak" : false,
         "mandatory" : false,
         "multiselect" : "N",
-        "nmAtributo" : "CD_CLASSE_MATERIAL",
+        "nmAtributo" : "CD_MATERIAL",
         "nmAtributoPai" : [ ],
         "nrSeqLocalizador" : 23135,
         "options" : [ ],
