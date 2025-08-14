@@ -145,7 +145,7 @@
                     "multiSelection" : false,
                     "paginationType" : "P",
                     "reportConfigVisible" : true,
-                    "saveGridColumnOrder" : false,
+                    "saveGridColumnOrder" : true,
                     "selectFirstRow" : false,
                     "unificarCountRegistros" : false,
                     "useNewGrid" : true,
@@ -303,7 +303,60 @@
                             "restrictPrimaryLevel" : "N",
                             "restrictSecondaryLevel" : "N",
                             "restrictTertiaryLevel" : "N",
-                            "children" : [ ],
+                            "children" : [ {
+                              "children" : [ {
+                                "children" : [ {
+                                  "children" : [ ],
+                                  "cmdkMetadataCustomization" : false,
+                                  "code" : 173455716,
+                                  "componentType" : "WCPANEL",
+                                  "customProperties" : {
+                                    "showDynamicReport" : "N"
+                                  },
+                                  "description" : "Bionexo",
+                                  "dictionaryCode" : 173478926,
+                                  "displayOrder" : 1,
+                                  "legends" : [ ],
+                                  "metadataFile" : true,
+                                  "objectType" : "COMPONENT",
+                                  "params" : [ {
+                                    "code" : 174479769,
+                                    "function" : 0,
+                                    "masterCode" : 84562647,
+                                    "masterName" : "CD_MATERIAL",
+                                    "originParam" : "OBJECT",
+                                    "parameterCode" : 0,
+                                    "parameterName" : "CD_MATERIAL",
+                                    "parameterSeq" : 0,
+                                    "parentObjectCode" : 173455716
+                                  } ],
+                                  "parentObjectCode" : 173230140,
+                                  "properties" : {
+                                    "autoCreateChild" : false,
+                                    "editableGrid" : false,
+                                    "emptyActivation" : false,
+                                    "multiSelection" : false,
+                                    "paginationType" : "P",
+                                    "reportConfigVisible" : false,
+                                    "saveGridColumnOrder" : false,
+                                    "selectFirstRow" : false,
+                                    "unificarCountRegistros" : false,
+                                    "useNewGrid" : true
+                                  },
+                                  "reports" : [ ]
+                                } ],
+                                "code" : 173230140,
+                                "description" : "Region 0",
+                                "displayOrder" : 1,
+                                "objectType" : "REGION",
+                                "parentObjectCode" : 173230139
+                              } ],
+                              "code" : 173230139,
+                              "description" : "Master region",
+                              "masterRegionType" : "LAYOUT_A",
+                              "objectType" : "MASTER_REGION",
+                              "parentObjectCode" : 86747055
+                            } ],
                             "code" : 86747055,
                             "configurable" : true,
                             "hasObjSchemRules" : false,
@@ -311,6 +364,67 @@
                             "displayOrder" : 2,
                             "expressionCode" : 1138691,
                             "expressionDescription" : "CMDK - ED - Bionexo",
+                            "objectType" : "TAB",
+                            "parentObjectCode" : 86717748,
+                            "topList" : false,
+                            "visible" : "S"
+                          }, {
+                            "allowCmdkCustomization" : true,
+                            "restrictPrimaryLevel" : "N",
+                            "restrictSecondaryLevel" : "N",
+                            "restrictTertiaryLevel" : "N",
+                            "children" : [ {
+                              "children" : [ {
+                                "children" : [ {
+                                  "chartType" : "B",
+                                  "children" : [ ],
+                                  "code" : 177723418,
+                                  "componentType" : "WCHART",
+                                  "customProperties" : {
+                                    "checkReportRelease" : "S",
+                                    "showValue" : "S",
+                                    "sortAscending" : "S",
+                                    "tooltipGrouped" : "S",
+                                    "withZoom" : "N"
+                                  },
+                                  "description" : "Gráfico 3",
+                                  "dictionaryCode" : 177734713,
+                                  "displayOrder" : 1,
+                                  "metadataFile" : true,
+                                  "objectType" : "COMPONENT",
+                                  "params" : [ {
+                                    "code" : 177877671,
+                                    "function" : 0,
+                                    "masterCode" : 84562647,
+                                    "masterName" : "CD_MATERIAL",
+                                    "originParam" : "OBJECT",
+                                    "parameterCode" : 0,
+                                    "parameterName" : "CD_MATERIAL",
+                                    "parameterSeq" : 0,
+                                    "parentObjectCode" : 177723418
+                                  } ],
+                                  "parentObjectCode" : 177525676,
+                                  "reports" : [ ]
+                                } ],
+                                "code" : 177525676,
+                                "description" : "Region 0",
+                                "displayOrder" : 1,
+                                "objectType" : "REGION",
+                                "parentObjectCode" : 177525675
+                              } ],
+                              "code" : 177525675,
+                              "description" : "Master region",
+                              "masterRegionType" : "LAYOUT_A",
+                              "objectType" : "MASTER_REGION",
+                              "parentObjectCode" : 175032169
+                            } ],
+                            "code" : 175032169,
+                            "configurable" : true,
+                            "hasObjSchemRules" : false,
+                            "description" : "Graph",
+                            "displayOrder" : 3,
+                            "expressionCode" : 290953,
+                            "expressionDescription" : "Graph",
                             "objectType" : "TAB",
                             "parentObjectCode" : 86717748,
                             "topList" : false,
@@ -332,7 +446,8 @@
                         "description" : "Region 0",
                         "displayOrder" : 1,
                         "objectType" : "REGION",
-                        "parentObjectCode" : 85497788
+                        "parentObjectCode" : 85497788,
+                        "tabGroupSelection" : false
                       } ],
                       "code" : 85497788,
                       "description" : "Master region",
@@ -368,7 +483,8 @@
                 "description" : "Region 0",
                 "displayOrder" : 1,
                 "objectType" : "REGION",
-                "parentObjectCode" : 85448118
+                "parentObjectCode" : 85448118,
+                "tabGroupSelection" : false
               } ],
               "code" : 85448118,
               "description" : "Master region",
