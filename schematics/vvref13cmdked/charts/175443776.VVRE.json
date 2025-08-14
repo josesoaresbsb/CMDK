@@ -1,0 +1,42 @@
+{
+  "identifier" : "VVRE",
+  "migrations" : [ {
+    "op" : "add",
+    "path" : "/",
+    "value" : {
+      "allowCmdkCustomization" : true,
+      "description" : "Grafico NF",
+      "mainChartSerie" : {
+        "attributeAxisX" : "CD_MATERIAL",
+        "graphicPresentationMethod" : "HB",
+        "increaseRuleValue" : "P",
+        "mainSerie" : true,
+        "noMarker" : false,
+        "query" : "select NR_SEQUENCIA, cd_material, QT_ITEM_NF, VL_TOTAL_ITEM_NF\nfrom NOTA_FISCAL_ITEM\nwhere cd_material = :cd_material",
+        "serieExpressionCode" : 290955,
+        "serieExpressionDescription" : "Graphs",
+        "serieId" : 175443777,
+        "series" : [ ],
+        "visible" : false
+      },
+      "propertiesNew" : {
+        "alwaysShowY2" : "N",
+        "applySort" : "N",
+        "checkReportRelease" : "S",
+        "hideLegend" : "N",
+        "rotatedText" : "N",
+        "showEmptyValues" : "N",
+        "showSlider" : "N",
+        "showValue" : "S",
+        "showXGrid" : "N",
+        "showYGrid" : "N",
+        "sortAscending" : "S",
+        "tooltipGrouped" : "S",
+        "withZoom" : "N"
+      },
+      "title" : "Graphs",
+      "titleExpressionCode" : 290955
+    }
+  } ],
+  "type" : "PARTNER"
+}

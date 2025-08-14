@@ -36,21 +36,27 @@
         "children" : [ {
           "children" : [ {
             "children" : [ {
+              "checkParentsRelease" : false,
               "children" : [ ],
               "cmdkMetadataCustomization" : false,
-              "code" : 92894320,
-              "componentType" : "WCPANEL",
+              "code" : 172488866,
+              "componentType" : "WDBPANEL",
+              "crudRules" : [ ],
               "customProperties" : {
-                "showDynamicReport" : "N"
+                "allowBatchSignature" : "N",
+                "showDynamicReport" : "N",
+                "withoutCache" : "N"
               },
-              "description" : "historico Material",
-              "dictionaryCode" : 92909431,
+              "description" : "Dados Historico Matwrial",
               "displayOrder" : 1,
+              "isMaster" : false,
               "legends" : [ ],
+              "masterObjectCode" : 0,
               "metadataFile" : true,
               "objectType" : "COMPONENT",
               "params" : [ {
-                "code" : 112597316,
+                "code" : 172794980,
+                "criteria" : 172734190,
                 "function" : 0,
                 "masterCode" : 84562647,
                 "masterName" : "CD_MATERIAL",
@@ -58,31 +64,47 @@
                 "parameterCode" : 0,
                 "parameterName" : "CD_MATERIAL",
                 "parameterSeq" : 0,
-                "parentObjectCode" : 92894320
+                "parentObjectCode" : 172488866
               } ],
-              "parentObjectCode" : 90215090,
+              "parentObjectCode" : 172480141,
               "properties" : {
+                "action" : "",
+                "activateOnDetail" : false,
                 "autoCreateChild" : false,
+                "cacheDetailViews" : false,
+                "checkReportRelease" : true,
+                "confirmReleaseRecord" : false,
+                "destroyDetail" : false,
                 "editableGrid" : false,
                 "emptyActivation" : false,
+                "gridWhenSave" : true,
+                "lazyLoadDetail" : false,
                 "multiSelection" : false,
+                "onlyDetail" : false,
+                "pageSize" : 0,
                 "paginationType" : "P",
+                "qtMaxRecord" : 0,
+                "readOnlyType" : "N",
                 "reportConfigVisible" : false,
+                "responsive" : false,
                 "saveGridColumnOrder" : false,
                 "selectFirstRow" : false,
-                "unificarCountRegistros" : false,
-                "useNewGrid" : true
+                "unificarCountRegistros" : true,
+                "useNewGrid" : true,
+                "usePagination" : true
               },
-              "reports" : [ ]
+              "reports" : [ ],
+              "signatureConfigured" : false,
+              "viewActivator" : 172734190,
+              "viewCode" : 172493676
             } ],
-            "code" : 90215090,
+            "code" : 172480141,
             "description" : "Region 0",
             "displayOrder" : 1,
             "objectType" : "REGION",
-            "parentObjectCode" : 90215089,
-            "tabGroupSelection" : false
+            "parentObjectCode" : 172480140
           } ],
-          "code" : 90215089,
+          "code" : 172480140,
           "description" : "Master region",
           "masterRegionType" : "LAYOUT_A",
           "objectType" : "MASTER_REGION",

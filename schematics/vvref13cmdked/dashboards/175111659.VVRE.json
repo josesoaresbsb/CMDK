@@ -1,0 +1,27 @@
+{
+  "identifier" : "VVRE",
+  "migrations" : [ {
+    "op" : "add",
+    "path" : "/",
+    "value" : {
+      "allowCmdkCustomization" : true,
+      "columns" : [ {
+        "code" : 175157725,
+        "nmCampoBase" : "CD_MATERIAL"
+      }, {
+        "code" : 175182588,
+        "nmCampoBase" : "CD_MATERIAL"
+      }, {
+        "code" : 175190105,
+        "nmCampoBase" : "VL_TOTAL_ITEM_NF"
+      }, {
+        "code" : 175192891,
+        "nmCampoBase" : "QT_ITEM_NF"
+      } ],
+      "configurable" : "N",
+      "description" : "Grafico de NF",
+      "query" : "select NR_SEQUENCIA, cd_material, QT_ITEM_NF, VL_TOTAL_ITEM_NF\nfrom NOTA_FISCAL_ITEM\nwhere cd_material = :cd_material"
+    }
+  } ],
+  "type" : "PARTNER"
+}
