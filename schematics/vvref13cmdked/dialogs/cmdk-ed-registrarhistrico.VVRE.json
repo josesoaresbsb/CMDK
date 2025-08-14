@@ -1,0 +1,115 @@
+{
+  "identifier" : "VVRE",
+  "migrations" : [ {
+    "op" : "add",
+    "path" : "/",
+    "value" : {
+      "description" : "CMDK - ED - Registrar Histórico",
+      "expressionCode" : 1138740,
+      "expressionCodeDescription" : "CMDK - ED - Registrar Histórico",
+      "featureCode" : 99686,
+      "children" : [ {
+        "buttonColor" : "C",
+        "buttonType" : "CANCEL",
+        "children" : [ ],
+        "code" : 89968916,
+        "description" : "Cancel",
+        "displayOrder" : 1,
+        "events" : [ ],
+        "expressionCode" : 302745,
+        "expressionDescription" : "Cancel",
+        "objectType" : "BUTTON",
+        "parentObjectCode" : 89968915
+      }, {
+        "buttonColor" : "A",
+        "buttonType" : "OK",
+        "children" : [ ],
+        "code" : 89968917,
+        "description" : "OK",
+        "displayOrder" : 2,
+        "events" : [ ],
+        "expressionCode" : 311702,
+        "expressionDescription" : "OK",
+        "objectType" : "BUTTON",
+        "parentObjectCode" : 89968915
+      }, {
+        "children" : [ {
+          "children" : [ {
+            "children" : [ {
+              "children" : [ ],
+              "cmdkMetadataCustomization" : false,
+              "code" : 92894320,
+              "componentType" : "WCPANEL",
+              "customProperties" : {
+                "showDynamicReport" : "N"
+              },
+              "description" : "historico Material",
+              "dictionaryCode" : 92909431,
+              "displayOrder" : 1,
+              "legends" : [ ],
+              "metadataFile" : true,
+              "objectType" : "COMPONENT",
+              "params" : [ {
+                "code" : 112597316,
+                "function" : 0,
+                "masterCode" : 84562647,
+                "masterName" : "CD_MATERIAL",
+                "originParam" : "OBJECT",
+                "parameterCode" : 0,
+                "parameterName" : "CD_MATERIAL",
+                "parameterSeq" : 0,
+                "parentObjectCode" : 92894320
+              } ],
+              "parentObjectCode" : 90215090,
+              "properties" : {
+                "autoCreateChild" : false,
+                "editableGrid" : false,
+                "emptyActivation" : false,
+                "multiSelection" : false,
+                "paginationType" : "P",
+                "reportConfigVisible" : false,
+                "saveGridColumnOrder" : false,
+                "selectFirstRow" : false,
+                "unificarCountRegistros" : false,
+                "useNewGrid" : true
+              },
+              "reports" : [ ]
+            } ],
+            "code" : 90215090,
+            "description" : "Region 0",
+            "displayOrder" : 1,
+            "objectType" : "REGION",
+            "parentObjectCode" : 90215089,
+            "tabGroupSelection" : false
+          } ],
+          "code" : 90215089,
+          "description" : "Master region",
+          "masterRegionType" : "LAYOUT_A",
+          "objectType" : "MASTER_REGION",
+          "parentObjectCode" : 90204165
+        } ],
+        "code" : 90204165,
+        "description" : "Panel",
+        "displayOrder" : 1,
+        "expressionCode" : 314879,
+        "expressionDescription" : "Panel",
+        "objectType" : "PANEL",
+        "panelWidth" : 12,
+        "parentObjectCode" : 89968915
+      } ],
+      "code" : 89968915,
+      "componentType" : "WDLG",
+      "dlgBasedOnPatientBarPosition" : true,
+      "modal" : true,
+      "objectType" : "COMPONENT",
+      "parentObjectCode" : 0,
+      "percentage" : false,
+      "position" : "C",
+      "properties" : {
+        "height" : 550,
+        "width" : 800
+      }
+    }
+  } ],
+  "type" : "PARTNER"
+}
