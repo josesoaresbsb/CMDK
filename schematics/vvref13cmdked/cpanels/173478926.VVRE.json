@@ -81,10 +81,31 @@
         "tipoColuna" : "Number",
         "tipoTotalizador" : "N",
         "userCanConfig" : true
+      }, {
+        "componente" : "DATETIMEPICKER",
+        "configurableType" : "N",
+        "hiddenByUser" : false,
+        "ieReadOnly" : true,
+        "ieTipoDate" : "D",
+        "ieTotalizar" : false,
+        "ieVisible" : true,
+        "inlineComponente" : "dtp",
+        "labelColuna" : "Entry date",
+        "labelExpressionCode" : 286727,
+        "layout" : "T",
+        "mask" : "date(shortDate)",
+        "nmCampoBase" : "DT_ATUALIZACAO",
+        "nrSequencia" : 259644641,
+        "options" : [ ],
+        "ordem" : 5,
+        "sensitive" : false,
+        "tipoColuna" : "Date",
+        "tipoTotalizador" : "N",
+        "userCanConfig" : true
       } ],
       "configurable" : "N",
-      "description" : "Material Bionexo",
-      "query" : "select NR_SEQUENCIA, cd_material, QT_ITEM_NF, VL_TOTAL_ITEM_NF\nfrom NOTA_FISCAL_ITEM\nwhere cd_material = :cd_material"
+      "description" : "Material NF",
+      "query" : "select NR_SEQUENCIA, cd_material, QT_ITEM_NF, VL_TOTAL_ITEM_NF, DT_ATUALIZACAO\nfrom NOTA_FISCAL_ITEM\nwhere cd_material = :cd_material"
     }
   } ],
   "type" : "PARTNER"

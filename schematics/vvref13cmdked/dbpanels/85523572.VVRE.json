@@ -140,8 +140,8 @@
       "referenceViews" : [ ],
       "responsive" : false,
       "table" : "VVRE_EDS_CMDK",
-      "title" : "CMDK - ED - Historico",
-      "titleExpressionCode" : 1138697
+      "title" : "CMDK - ED - Dados Material",
+      "titleExpressionCode" : 1138815
     }
   } ],
   "type" : "PARTNER"
