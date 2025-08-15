@@ -1,0 +1,45 @@
+{
+  "identifier" : "VVRE",
+  "migrations" : [ {
+    "op" : "add",
+    "path" : "/",
+    "value" : {
+      "allowCmdkCustomization" : true,
+      "description" : "Grafico C",
+      "mainChartSerie" : {
+        "attributeAxisX" : "DT_ENTRADA",
+        "attributeAxisY" : "VL_TOTAL",
+        "formatMaskAxisX" : "DD/MM",
+        "formatMaskAxisY" : "######,00",
+        "graphicPresentationMethod" : "B",
+        "increaseRuleValue" : "SQL",
+        "mainSerie" : true,
+        "noMarker" : false,
+        "query" : "select cd_material, to_char(DT_ATUALIZACAO,'MM/YYYY') dt_entrada, sum(VL_TOTAL_ITEM_NF) vl_total \nfrom NOTA_FISCAL_ITEM\nwhere cd_material = :cd_material\nand VL_TOTAL_ITEM_NF !=0\nand ((to_char(DT_ATUALIZACAO,'MM/YYYY') = :DT_entrada) or (:DT_entrada is null)) \ngroup by cd_material,DT_ATUALIZACAO\norder by DT_ATUALIZACAO",
+        "serieExpressionCode" : 290953,
+        "serieExpressionDescription" : "Graph",
+        "serieId" : 260927105,
+        "series" : [ ],
+        "visible" : false
+      },
+      "propertiesNew" : {
+        "alwaysShowY2" : "N",
+        "applySort" : "N",
+        "checkReportRelease" : "S",
+        "hideLegend" : "N",
+        "rotatedText" : "N",
+        "showEmptyValues" : "N",
+        "showSlider" : "N",
+        "showValue" : "S",
+        "showXGrid" : "N",
+        "showYGrid" : "N",
+        "sortAscending" : "S",
+        "tooltipGrouped" : "S",
+        "withZoom" : "N"
+      },
+      "title" : "Graph",
+      "titleExpressionCode" : 290953
+    }
+  } ],
+  "type" : "PARTNER"
+}

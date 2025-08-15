@@ -130,7 +130,83 @@
                   "description" : "Material List",
                   "dictionaryCode" : 84565872,
                   "displayOrder" : 1,
-                  "legends" : [ ],
+                  "legends" : [ {
+                    "active" : "S",
+                    "captionDisplayMethod" : "STATUS",
+                    "code" : 178596200,
+                    "colors" : [ {
+                      "description" : "No registration at the pharmacy",
+                      "expressionCode" : 331586,
+                      "nrSeqApres" : 9050,
+                      "nrSequence" : "3095",
+                      "rules" : [ {
+                        "conditionDescription" : "Teste",
+                        "conditions" : [ {
+                          "baseAttribute" : "IE_SITUACAO",
+                          "condition" : "IS NULL",
+                          "conditionSeq" : 178826249,
+                          "option" : "ATTRIBUTE WITH VALUE"
+                        } ],
+                        "ruleSeq" : 178818398
+                      } ]
+                    }, {
+                      "description" : "No registration at the operator",
+                      "expressionCode" : 331587,
+                      "nrSeqApres" : 9045,
+                      "nrSequence" : "3094",
+                      "rules" : [ ]
+                    }, {
+                      "description" : "No registration at the provider",
+                      "expressionCode" : 331588,
+                      "nrSeqApres" : 9040,
+                      "nrSequence" : "3093",
+                      "rules" : [ ]
+                    }, {
+                      "backgroundColor" : "#45DE85",
+                      "description" : "Active ",
+                      "expressionCode" : 283906,
+                      "nrSeqApres" : 9035,
+                      "nrSequence" : "3050",
+                      "rules" : [ {
+                        "conditionDescription" : "Ativos",
+                        "conditions" : [ {
+                          "baseAttribute" : "IE_SITUACAO",
+                          "condition" : "=",
+                          "conditionSeq" : 178940652,
+                          "option" : "ATTRIBUTE WITH VALUE",
+                          "value" : "A"
+                        } ],
+                        "ruleSeq" : 178927486
+                      } ]
+                    }, {
+                      "backgroundColor" : "#9E9E9E",
+                      "description" : "Inactive",
+                      "expressionCode" : 319239,
+                      "nrSeqApres" : 9030,
+                      "nrSequence" : "3052",
+                      "rules" : [ {
+                        "conditionDescription" : "Inativos",
+                        "conditions" : [ {
+                          "baseAttribute" : "IE_SITUACAO",
+                          "condition" : "=",
+                          "conditionSeq" : 178966578,
+                          "option" : "ATTRIBUTE WITH VALUE",
+                          "value" : "I"
+                        } ],
+                        "ruleSeq" : 178960884
+                      } ]
+                    } ],
+                    "column" : "S",
+                    "description" : "Situação do material",
+                    "displayLebelLegend" : "S",
+                    "displayOrder" : 1,
+                    "icons" : [ ],
+                    "keyAttribute" : "IE_SITUACAO",
+                    "line" : "N",
+                    "masterName" : "IE_SITUACAO",
+                    "nrSequence" : 597,
+                    "order" : "N"
+                  } ],
                   "metadataFile" : true,
                   "objectType" : "COMPONENT",
                   "params" : [ ],
@@ -151,7 +227,25 @@
                     "useNewGrid" : true,
                     "usePagination" : true
                   },
-                  "reports" : [ ]
+                  "reports" : [ {
+                    "code" : 179142087,
+                    "params" : [ {
+                      "code" : 179181931,
+                      "function" : 0,
+                      "masterCode" : 84562647,
+                      "masterName" : "CD_MATERIAL",
+                      "originParam" : "OBJECT",
+                      "parameterCode" : 0,
+                      "parameterName" : "CD_MATERIAL",
+                      "parameterSeq" : 0,
+                      "parentObjectCode" : 179142087
+                    } ],
+                    "report" : 4494,
+                    "showMessage" : false,
+                    "title" : "Últimas Compras por Material",
+                    "type" : "WSUP",
+                    "usingSectorPrinters" : false
+                  } ]
                 } ],
                 "code" : 84245959,
                 "description" : "Region 0",
@@ -290,10 +384,10 @@
                             "code" : 86717749,
                             "configurable" : true,
                             "hasObjSchemRules" : false,
-                            "description" : "CMDK - ED - Historico",
+                            "description" : "CMDK - ED - Dados Material",
                             "displayOrder" : 1,
-                            "expressionCode" : 1138697,
-                            "expressionDescription" : "CMDK - ED - Historico",
+                            "expressionCode" : 1138815,
+                            "expressionDescription" : "CMDK - ED - Dados Material",
                             "objectType" : "TAB",
                             "parentObjectCode" : 86717748,
                             "topList" : false,
@@ -306,14 +400,68 @@
                             "children" : [ {
                               "children" : [ {
                                 "children" : [ {
-                                  "children" : [ ],
+                                  "children" : [ {
+                                    "code" : 262393742,
+                                    "componentType" : "WPOPUP",
+                                    "description" : "Dados Nota Fiscal",
+                                    "displayOrder" : 1,
+                                    "menuItems" : [ {
+                                      "aiContextMenu" : false,
+                                      "alignment" : "D",
+                                      "children" : [ ],
+                                      "code" : 262410673,
+                                      "componentType" : "MENUITEM",
+                                      "enabled" : true,
+                                      "events" : [ {
+                                        "eventActions" : [ {
+                                          "actionOrder" : 1,
+                                          "actionSeq" : 262476579,
+                                          "compReactivateCode" : 173455716,
+                                          "eventAction" : "EXTPPT",
+                                          "externalAccessFeatureCode" : 40,
+                                          "externalAccessFeatureName" : "Nota Fiscal",
+                                          "externalAccessMethod" : "acessoExterno",
+                                          "externalAccessRoute" : "cornfef8",
+                                          "multipleBodyItemsSupported" : false,
+                                          "params" : [ {
+                                            "code" : 262702512,
+                                            "function" : 0,
+                                            "masterCode" : 173455716,
+                                            "masterName" : "NR_SEQUENCIA",
+                                            "originParam" : "OBJECT",
+                                            "parameterCode" : 0,
+                                            "parameterName" : "NR_SEQUENCIA",
+                                            "parameterSeq" : 1
+                                          } ],
+                                          "reloadLine" : "S"
+                                        } ],
+                                        "eventSeq" : 262476578,
+                                        "eventType" : "C"
+                                      } ],
+                                      "expressionCode" : 516516,
+                                      "menuCode" : 262393742,
+                                      "metadataFile" : false,
+                                      "name" : "Invoice's data",
+                                      "objectType" : "COMPONENT",
+                                      "order" : 1,
+                                      "parentObjectCode" : 262393742,
+                                      "rules" : [ ],
+                                      "text" : "Invoice's data",
+                                      "topList" : false,
+                                      "type" : "STANDARD",
+                                      "visible" : true
+                                    } ],
+                                    "objectType" : "COMPONENT",
+                                    "parentObjectCode" : 173455716,
+                                    "popUpHandle" : "N"
+                                  } ],
                                   "cmdkMetadataCustomization" : false,
                                   "code" : 173455716,
                                   "componentType" : "WCPANEL",
                                   "customProperties" : {
                                     "showDynamicReport" : "N"
                                   },
-                                  "description" : "Bionexo",
+                                  "description" : "Dados NF X Link",
                                   "dictionaryCode" : 173478926,
                                   "displayOrder" : 1,
                                   "legends" : [ ],
@@ -349,7 +497,8 @@
                                 "description" : "Region 0",
                                 "displayOrder" : 1,
                                 "objectType" : "REGION",
-                                "parentObjectCode" : 173230139
+                                "parentObjectCode" : 173230139,
+                                "tabGroupSelection" : false
                               } ],
                               "code" : 173230139,
                               "description" : "Master region",
@@ -360,10 +509,10 @@
                             "code" : 86747055,
                             "configurable" : true,
                             "hasObjSchemRules" : false,
-                            "description" : "CMDK - ED - Bionexo",
+                            "description" : "CMDK - ED - Notas Fiscais",
                             "displayOrder" : 2,
-                            "expressionCode" : 1138691,
-                            "expressionDescription" : "CMDK - ED - Bionexo",
+                            "expressionCode" : 1138816,
+                            "expressionDescription" : "CMDK - ED - Notas Fiscais",
                             "objectType" : "TAB",
                             "parentObjectCode" : 86717748,
                             "topList" : false,
@@ -388,7 +537,7 @@
                                     "withZoom" : "N"
                                   },
                                   "description" : "Gráfico 3",
-                                  "dictionaryCode" : 177734713,
+                                  "dictionaryCode" : 260927104,
                                   "displayOrder" : 1,
                                   "metadataFile" : true,
                                   "objectType" : "COMPONENT",
@@ -402,6 +551,36 @@
                                     "parameterName" : "CD_MATERIAL",
                                     "parameterSeq" : 0,
                                     "parentObjectCode" : 177723418
+                                  } ],
+                                  "parentObjectCode" : 177525676,
+                                  "reports" : [ ]
+                                }, {
+                                  "chartType" : "L",
+                                  "children" : [ ],
+                                  "code" : 260363180,
+                                  "componentType" : "WCHART",
+                                  "customProperties" : {
+                                    "checkReportRelease" : "S",
+                                    "showValue" : "S",
+                                    "sortAscending" : "S",
+                                    "tooltipGrouped" : "S",
+                                    "withZoom" : "N"
+                                  },
+                                  "description" : "Grafico Linha",
+                                  "dictionaryCode" : 260368607,
+                                  "displayOrder" : 1,
+                                  "metadataFile" : true,
+                                  "objectType" : "COMPONENT",
+                                  "params" : [ {
+                                    "code" : 260612835,
+                                    "function" : 0,
+                                    "masterCode" : 84562647,
+                                    "masterName" : "CD_MATERIAL",
+                                    "originParam" : "OBJECT",
+                                    "parameterCode" : 0,
+                                    "parameterName" : "CD_MATERIAL",
+                                    "parameterSeq" : 0,
+                                    "parentObjectCode" : 260363180
                                   } ],
                                   "parentObjectCode" : 177525676,
                                   "reports" : [ ]
@@ -421,10 +600,10 @@
                             "code" : 175032169,
                             "configurable" : true,
                             "hasObjSchemRules" : false,
-                            "description" : "Graph",
+                            "description" : "CMDK - ED - Gráfico NF",
                             "displayOrder" : 3,
-                            "expressionCode" : 290953,
-                            "expressionDescription" : "Graph",
+                            "expressionCode" : 1138817,
+                            "expressionDescription" : "CMDK - ED - Gráfico NF",
                             "objectType" : "TAB",
                             "parentObjectCode" : 86717748,
                             "topList" : false,

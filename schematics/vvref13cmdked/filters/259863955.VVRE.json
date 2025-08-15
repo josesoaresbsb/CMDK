@@ -1,0 +1,52 @@
+{
+  "identifier" : "VVRE",
+  "migrations" : [ {
+    "op" : "add",
+    "path" : "/",
+    "value" : {
+      "allowCmdkCustomization" : true,
+      "description" : "Filtro Gráfico",
+      "dimensions" : [ ],
+      "filterUseCache" : false,
+      "gruposVisao" : { },
+      "listaMetaAtributos" : [ {
+        "IeTooltip" : false,
+        "alinharDireita" : false,
+        "canClean" : true,
+        "code" : 259875762,
+        "componente" : "DATETIMEPICKER",
+        "dependentFields" : [ ],
+        "displayButtonToday" : false,
+        "displayCurrentTime" : true,
+        "displayWeekday" : false,
+        "editableDescription" : false,
+        "enabled" : true,
+        "filterComponentType" : "WDTP",
+        "hiddenByUser" : false,
+        "ieInfoPatient" : false,
+        "ieSalvar" : true,
+        "ieTipoAction" : "R",
+        "ieVisible" : true,
+        "initialFocus" : false,
+        "label" : "Month of entry",
+        "labelExpressionCode" : 891402,
+        "largura" : 12,
+        "leftAnchored" : false,
+        "lineBreak" : false,
+        "mandatory" : false,
+        "mask" : "date(shortMonth)",
+        "multiselect" : "N",
+        "nmAtributo" : "DT_ATUALIZACAO",
+        "nmAtributoPai" : [ ],
+        "options" : [ ],
+        "readOnly" : false,
+        "sensitive" : false,
+        "sqlRestriction" : "and DT_ATUALIZACAO = :DT_ATUALIZACAO",
+        "tabStop" : true,
+        "tipoAtributo" : "DATE",
+        "useCheckboxCluster" : false
+      } ]
+    }
+  } ],
+  "type" : "PARTNER"
+}
