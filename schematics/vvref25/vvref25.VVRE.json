@@ -1,0 +1,127 @@
+{
+  "identifier" : "VVRE",
+  "migrations" : [ {
+    "op" : "add",
+    "path" : "/",
+    "value" : {
+      "avoidMemoryLeaks" : true,
+      "dialogs" : [ ],
+      "disableDeveloperBar" : false,
+      "experimentalFeatures" : { },
+      "externalAccessItens" : {
+        "ALL_FEATURES" : [ ],
+        "SPOTLIGHT_FEATURES" : [ ]
+      },
+      "featureCode" : 99700,
+      "globalPopups" : [ ],
+      "metadataToFile" : true,
+      "noDataExpressionCode" : 397569,
+      "children" : [ {
+        "children" : [ {
+          "children" : [ {
+            "children" : [ {
+              "checkParentsRelease" : false,
+              "children" : [ ],
+              "cmdkMetadataCustomization" : false,
+              "code" : 708358182,
+              "componentType" : "WDBPANEL",
+              "crudRules" : [ ],
+              "customProperties" : {
+                "allowBatchSignature" : "N",
+                "showDynamicReport" : "N",
+                "withoutCache" : "N"
+              },
+              "description" : "Projeto - DbPanel",
+              "displayOrder" : 1,
+              "isMaster" : false,
+              "legends" : [ ],
+              "masterObjectCode" : 0,
+              "metadataFile" : true,
+              "objectType" : "COMPONENT",
+              "params" : [ ],
+              "parentObjectCode" : 708342592,
+              "properties" : {
+                "action" : "",
+                "activateOnDetail" : false,
+                "autoCreateChild" : false,
+                "cacheDetailViews" : false,
+                "checkReportRelease" : true,
+                "confirmReleaseRecord" : false,
+                "destroyDetail" : false,
+                "editableGrid" : false,
+                "emptyActivation" : false,
+                "gridWhenSave" : true,
+                "lazyLoadDetail" : false,
+                "multiSelection" : false,
+                "onlyDetail" : false,
+                "pageSize" : 0,
+                "paginationType" : "P",
+                "qtMaxRecord" : 0,
+                "readOnlyType" : "N",
+                "reportConfigVisible" : false,
+                "responsive" : false,
+                "saveGridColumnOrder" : false,
+                "selectFirstRow" : true,
+                "unificarCountRegistros" : true,
+                "useNewGrid" : true,
+                "usePagination" : true
+              },
+              "reports" : [ ],
+              "signatureConfigured" : false,
+              "viewCode" : 708367222
+            } ],
+            "code" : 708342592,
+            "description" : "Region 0",
+            "displayOrder" : 1,
+            "objectType" : "REGION",
+            "parentObjectCode" : 708342591
+          } ],
+          "code" : 708342591,
+          "description" : "Master region",
+          "masterRegionType" : "LAYOUT_A",
+          "objectType" : "MASTER_REGION",
+          "parentObjectCode" : 708164517
+        } ],
+        "code" : 708164517,
+        "description" : "Panel",
+        "displayOrder" : 1,
+        "expressionCode" : 314879,
+        "expressionDescription" : "Panel",
+        "objectType" : "PANEL",
+        "panelWidth" : 6,
+        "parentObjectCode" : 99700
+      }, {
+        "children" : [ {
+          "children" : [ {
+            "children" : [ ],
+            "code" : 708347114,
+            "description" : "Region 0",
+            "displayOrder" : 1,
+            "objectType" : "REGION",
+            "parentObjectCode" : 708347113
+          } ],
+          "code" : 708347113,
+          "description" : "Master region",
+          "masterRegionType" : "LAYOUT_A",
+          "objectType" : "MASTER_REGION",
+          "parentObjectCode" : 708164518
+        } ],
+        "code" : 708164518,
+        "description" : "Panel",
+        "displayOrder" : 2,
+        "expressionCode" : 314879,
+        "expressionDescription" : "Panel",
+        "objectType" : "PANEL",
+        "panelWidth" : 6,
+        "parentObjectCode" : 99700
+      } ],
+      "code" : 99700,
+      "componentType" : "WSCH",
+      "description" : "Schematic 42",
+      "objectType" : "SCHEMATIC",
+      "parentObjectCode" : 0,
+      "version" : "1.7.0"
+    }
+  } ],
+  "type" : "PARTNER"
+}
