@@ -105,7 +105,26 @@
                   "cmdkMetadataCustomization" : false,
                   "code" : 722267193,
                   "componentType" : "WDBPANEL",
-                  "crudRules" : [ ],
+                  "crudRules" : [ {
+                    "canDelete" : true,
+                    "canDuplicate" : true,
+                    "canInsert" : true,
+                    "canUpdate" : true,
+                    "code" : 724613639,
+                    "rules" : [ {
+                      "conditionDescription" : "Valida registro liberados - projetos aprovados não podem ser alterados",
+                      "conditions" : [ {
+                        "baseAttribute" : "IE_STATUS",
+                        "condition" : "=",
+                        "conditionSeq" : 724625621,
+                        "option" : "ATTRIBUTE WITH VALUE",
+                        "referenceObjectCode" : 712362462,
+                        "scriptReference" : 712362462,
+                        "value" : "AG"
+                      } ],
+                      "ruleSeq" : 724621149
+                    } ]
+                  } ],
                   "customProperties" : {
                     "allowBatchSignature" : "N",
                     "showDynamicReport" : "N",
@@ -128,6 +147,17 @@
                     "parameterCode" : 0,
                     "parameterName" : "NR_SEQ_PROJETO",
                     "parameterSeq" : 0,
+                    "parentObjectCode" : 722267193
+                  }, {
+                    "code" : 724714841,
+                    "criteria" : 723768923,
+                    "function" : 0,
+                    "masterCode" : 712362462,
+                    "masterName" : "IE_STATUS",
+                    "originParam" : "OBJECT",
+                    "parameterCode" : 0,
+                    "parameterName" : "IE_STATUS",
+                    "parameterSeq" : 1,
                     "parentObjectCode" : 722267193
                   } ],
                   "parentObjectCode" : 712381618,
