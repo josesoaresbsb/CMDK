@@ -690,9 +690,34 @@
               "children" : [ {
                 "children" : [ {
                   "checkParentsRelease" : false,
-                  "children" : [ ],
+                  "children" : [ {
+                    "children" : [ ],
+                    "cmdkMetadataCustomization" : false,
+                    "code" : 739855433,
+                    "componentType" : "WFILTRO",
+                    "customProperties" : {
+                      "enableMultiFilters" : "N"
+                    },
+                    "description" : "Filter",
+                    "dictionaryCode" : 738793747,
+                    "experimentalFeatures" : {
+                      "experimentalForm" : true
+                    },
+                    "metadataFile" : true,
+                    "objectType" : "COMPONENT",
+                    "params" : [ ],
+                    "parentObjectCode" : 739802357,
+                    "properties" : {
+                      "closeAfterSearch" : true,
+                      "lazyLoadDetail" : false,
+                      "modal" : false,
+                      "openOnShow" : false,
+                      "orientation" : "TOP",
+                      "responsive" : false
+                    }
+                  } ],
                   "cmdkMetadataCustomization" : false,
-                  "code" : 733020781,
+                  "code" : 739802357,
                   "componentType" : "WDBPANEL",
                   "crudRules" : [ ],
                   "customProperties" : {
@@ -700,15 +725,15 @@
                     "showDynamicReport" : "N",
                     "withoutCache" : "N"
                   },
-                  "description" : "sol Compras - DbPanel",
+                  "description" : "Solic. Compra - DbPanel",
                   "displayOrder" : 1,
-                  "isMaster" : false,
+                  "isMaster" : true,
                   "legends" : [ ],
                   "masterObjectCode" : 0,
                   "metadataFile" : true,
                   "objectType" : "COMPONENT",
                   "params" : [ ],
-                  "parentObjectCode" : 733013692,
+                  "parentObjectCode" : 739789593,
                   "properties" : {
                     "action" : "",
                     "activateOnDetail" : false,
@@ -730,7 +755,7 @@
                     "reportConfigVisible" : false,
                     "responsive" : false,
                     "saveGridColumnOrder" : false,
-                    "selectFirstRow" : false,
+                    "selectFirstRow" : true,
                     "unificarCountRegistros" : true,
                     "useNewGrid" : true,
                     "usePagination" : true
@@ -739,32 +764,111 @@
                   "signatureConfigured" : false,
                   "viewCode" : 733050595
                 } ],
-                "code" : 733013692,
+                "code" : 739789593,
                 "description" : "Region 0",
                 "displayOrder" : 1,
                 "objectType" : "REGION",
-                "parentObjectCode" : 733013691
-              }, {
-                "children" : [ ],
-                "code" : 733013693,
-                "description" : "Region 1",
-                "displayOrder" : 2,
-                "objectType" : "REGION",
-                "parentObjectCode" : 733013691
+                "parentObjectCode" : 739789592
               } ],
-              "code" : 733013691,
+              "code" : 739789592,
               "description" : "Master region",
-              "masterRegionType" : "LAYOUT_B",
+              "masterRegionType" : "LAYOUT_A",
               "objectType" : "MASTER_REGION",
-              "parentObjectCode" : 712391132
+              "parentObjectCode" : 739783473
             } ],
-            "code" : 712391132,
+            "code" : 739783473,
             "description" : "Panel",
             "displayOrder" : 1,
             "expressionCode" : 314879,
             "expressionDescription" : "Panel",
             "objectType" : "PANEL",
-            "panelWidth" : 12,
+            "panelWidth" : 6,
+            "parentObjectCode" : 712391131
+          }, {
+            "children" : [ {
+              "children" : [ {
+                "children" : [ {
+                  "checkParentsRelease" : false,
+                  "children" : [ ],
+                  "cmdkMetadataCustomization" : false,
+                  "code" : 739829525,
+                  "componentType" : "WDBPANEL",
+                  "crudRules" : [ ],
+                  "customProperties" : {
+                    "allowBatchSignature" : "N",
+                    "showDynamicReport" : "N",
+                    "withoutCache" : "N"
+                  },
+                  "description" : "Item Solic. Compra - DbPanel",
+                  "displayOrder" : 1,
+                  "isMaster" : false,
+                  "legends" : [ ],
+                  "masterObjectCode" : 739802357,
+                  "metadataFile" : true,
+                  "objectType" : "COMPONENT",
+                  "params" : [ {
+                    "code" : 739876161,
+                    "criteria" : 739696095,
+                    "function" : 0,
+                    "masterCode" : 739802357,
+                    "masterName" : "NR_SOLIC_COMPRA",
+                    "originParam" : "OBJECT",
+                    "parameterCode" : 0,
+                    "parameterName" : "NR_SOLIC_COMPRA",
+                    "parameterSeq" : 0,
+                    "parentObjectCode" : 739829525
+                  } ],
+                  "parentObjectCode" : 739793680,
+                  "properties" : {
+                    "action" : "",
+                    "activateOnDetail" : false,
+                    "autoCreateChild" : false,
+                    "cacheDetailViews" : false,
+                    "checkReportRelease" : true,
+                    "confirmReleaseRecord" : false,
+                    "destroyDetail" : false,
+                    "editableGrid" : false,
+                    "emptyActivation" : false,
+                    "gridWhenSave" : true,
+                    "lazyLoadDetail" : false,
+                    "multiSelection" : false,
+                    "onlyDetail" : false,
+                    "pageSize" : 0,
+                    "paginationType" : "P",
+                    "qtMaxRecord" : 0,
+                    "readOnlyType" : "N",
+                    "reportConfigVisible" : false,
+                    "responsive" : false,
+                    "saveGridColumnOrder" : false,
+                    "selectFirstRow" : true,
+                    "unificarCountRegistros" : true,
+                    "useNewGrid" : true,
+                    "usePagination" : true
+                  },
+                  "reports" : [ ],
+                  "signatureConfigured" : false,
+                  "viewActivator" : 739696095,
+                  "viewCode" : 739159349
+                } ],
+                "code" : 739793680,
+                "description" : "Region 0",
+                "displayOrder" : 1,
+                "objectType" : "REGION",
+                "parentObjectCode" : 739793679
+              } ],
+              "code" : 739793679,
+              "description" : "Master region",
+              "masterRegionType" : "LAYOUT_A",
+              "objectType" : "MASTER_REGION",
+              "parentObjectCode" : 739783474
+            } ],
+            "code" : 739783474,
+            "description" : "Panel",
+            "displayOrder" : 2,
+            "expressionCode" : 314879,
+            "expressionDescription" : "Panel",
+            "objectType" : "PANEL",
+            "panelWidth" : 6,
             "parentObjectCode" : 712391131
           } ],
           "code" : 712391131,
