@@ -27,11 +27,347 @@
               "children" : [ {
                 "children" : [ {
                   "checkParentsRelease" : false,
-                  "children" : [ ],
+                  "children" : [ {
+                    "code" : 729931023,
+                    "componentType" : "WPOPUP",
+                    "description" : "Botão Direito Option",
+                    "displayOrder" : 1,
+                    "menuItems" : [ {
+                      "aiContextMenu" : false,
+                      "alignment" : "E",
+                      "children" : [ ],
+                      "code" : 729946424,
+                      "componentType" : "MENUITEM",
+                      "enabled" : true,
+                      "events" : [ {
+                        "eventActions" : [ {
+                          "actionOrder" : 1,
+                          "actionSeq" : 730057165,
+                          "compReactivateCode" : 712362462,
+                          "eventAction" : "PROC",
+                          "multipleBodyItemsSupported" : false,
+                          "params" : [ {
+                            "code" : 730522439,
+                            "masterCode" : 712362462,
+                            "masterName" : "NR_SEQUENCIA",
+                            "originParam" : "OBJECT",
+                            "parameterName" : "NR_COT_COMPRA_P",
+                            "parameterSeq" : 1
+                          }, {
+                            "code" : 730522440,
+                            "defaultValue" : "0",
+                            "originParam" : "DEFAULT",
+                            "parameterName" : "DS_TITULO_P",
+                            "parameterSeq" : 2
+                          }, {
+                            "code" : 730522441,
+                            "defaultValue" : "0",
+                            "originParam" : "DEFAULT",
+                            "parameterName" : "DS_HISTORICO_P",
+                            "parameterSeq" : 3
+                          }, {
+                            "code" : 730522442,
+                            "defaultValue" : "PJ",
+                            "originParam" : "DEFAULT",
+                            "parameterName" : "IE_ORIGEM_P",
+                            "parameterSeq" : 4
+                          }, {
+                            "code" : 730522443,
+                            "defaultValue" : "0",
+                            "originParam" : "DEFAULT",
+                            "parameterName" : "NM_USUARIO_P",
+                            "parameterSeq" : 5
+                          } ],
+                          "procedureCode" : 10273,
+                          "reloadLine" : "S"
+                        } ],
+                        "eventSeq" : 730057164,
+                        "eventType" : "C"
+                      } ],
+                      "expressionCode" : 1146076,
+                      "menuCode" : 729931023,
+                      "metadataFile" : false,
+                      "name" : "Aprovar Projeto",
+                      "objectType" : "COMPONENT",
+                      "order" : 1,
+                      "parentObjectCode" : 729931023,
+                      "rules" : [ {
+                        "conditionDescription" : "Valida pendente de Aprovação",
+                        "conditions" : [ {
+                          "baseAttribute" : "IE_STATUS",
+                          "condition" : "=",
+                          "conditionSeq" : 730110360,
+                          "option" : "ATTRIBUTE WITH VALUE",
+                          "referenceObjectCode" : 712362462,
+                          "scriptReference" : 712362462,
+                          "value" : "AG"
+                        } ],
+                        "nrSeqRule" : 730079018,
+                        "result" : "ENABLED"
+                      } ],
+                      "text" : "Aprovar Projeto",
+                      "topList" : false,
+                      "type" : "STANDARD",
+                      "visible" : true
+                    }, {
+                      "aiContextMenu" : false,
+                      "alignment" : "E",
+                      "children" : [ ],
+                      "code" : 730753308,
+                      "componentType" : "MENUITEM",
+                      "enabled" : true,
+                      "events" : [ {
+                        "eventActions" : [ {
+                          "actionOrder" : 1,
+                          "actionSeq" : 730786447,
+                          "compReactivateCode" : 712362462,
+                          "eventAction" : "PROC",
+                          "multipleBodyItemsSupported" : false,
+                          "params" : [ {
+                            "code" : 730869903,
+                            "masterCode" : 712362462,
+                            "masterName" : "NR_SEQUENCIA",
+                            "originParam" : "OBJECT",
+                            "parameterName" : "NR_COT_COMPRA_P",
+                            "parameterSeq" : 1
+                          }, {
+                            "code" : 730869904,
+                            "defaultValue" : "0",
+                            "originParam" : "DEFAULT",
+                            "parameterName" : "DS_TITULO_P",
+                            "parameterSeq" : 2
+                          }, {
+                            "code" : 730869905,
+                            "defaultValue" : "0",
+                            "originParam" : "DEFAULT",
+                            "parameterName" : "DS_HISTORICO_P",
+                            "parameterSeq" : 3
+                          }, {
+                            "code" : 730869906,
+                            "defaultValue" : "DL",
+                            "originParam" : "DEFAULT",
+                            "parameterName" : "IE_ORIGEM_P",
+                            "parameterSeq" : 4
+                          }, {
+                            "code" : 730869907,
+                            "defaultValue" : "0",
+                            "originParam" : "DEFAULT",
+                            "parameterName" : "NM_USUARIO_P",
+                            "parameterSeq" : 5
+                          } ],
+                          "procedureCode" : 10273,
+                          "reloadLine" : "S"
+                        } ],
+                        "eventSeq" : 730786446,
+                        "eventType" : "C"
+                      } ],
+                      "expressionCode" : 317804,
+                      "menuCode" : 729931023,
+                      "metadataFile" : false,
+                      "name" : "Undo approval ",
+                      "objectType" : "COMPONENT",
+                      "order" : 2,
+                      "parentObjectCode" : 729931023,
+                      "rules" : [ {
+                        "conditionDescription" : "Valida se aprovado",
+                        "conditions" : [ {
+                          "baseAttribute" : "IE_STATUS",
+                          "condition" : "=",
+                          "conditionSeq" : 730809968,
+                          "option" : "ATTRIBUTE WITH VALUE",
+                          "referenceObjectCode" : 712362462,
+                          "scriptReference" : 712362462,
+                          "value" : "AP"
+                        } ],
+                        "nrSeqRule" : 730796246,
+                        "result" : "ENABLED"
+                      } ],
+                      "text" : "Undo approval ",
+                      "topList" : false,
+                      "type" : "STANDARD",
+                      "visible" : true
+                    }, {
+                      "aiContextMenu" : false,
+                      "alignment" : "E",
+                      "children" : [ ],
+                      "code" : 731337183,
+                      "componentType" : "MENUITEM",
+                      "enabled" : true,
+                      "events" : [ {
+                        "eventActions" : [ {
+                          "actionOrder" : 1,
+                          "actionSeq" : 731380765,
+                          "compReactivateCode" : 712362462,
+                          "eventAction" : "PROC",
+                          "multipleBodyItemsSupported" : false,
+                          "params" : [ {
+                            "code" : 731398749,
+                            "masterCode" : 712362462,
+                            "masterName" : "NR_SEQUENCIA",
+                            "originParam" : "OBJECT",
+                            "parameterName" : "NR_COT_COMPRA_P",
+                            "parameterSeq" : 1
+                          }, {
+                            "code" : 731398750,
+                            "defaultValue" : "0",
+                            "originParam" : "DEFAULT",
+                            "parameterName" : "DS_TITULO_P",
+                            "parameterSeq" : 2
+                          }, {
+                            "code" : 731398751,
+                            "defaultValue" : "0",
+                            "originParam" : "DEFAULT",
+                            "parameterName" : "DS_HISTORICO_P",
+                            "parameterSeq" : 3
+                          }, {
+                            "code" : 731398752,
+                            "defaultValue" : "PS",
+                            "originParam" : "DEFAULT",
+                            "parameterName" : "IE_ORIGEM_P",
+                            "parameterSeq" : 4
+                          }, {
+                            "code" : 731398753,
+                            "defaultValue" : "0",
+                            "originParam" : "DEFAULT",
+                            "parameterName" : "NM_USUARIO_P",
+                            "parameterSeq" : 5
+                          } ],
+                          "procedureCode" : 10273,
+                          "reloadLine" : "S"
+                        } ],
+                        "eventSeq" : 731380764,
+                        "eventType" : "C"
+                      } ],
+                      "expressionCode" : 322411,
+                      "menuCode" : 729931023,
+                      "metadataFile" : false,
+                      "name" : "Pause",
+                      "objectType" : "COMPONENT",
+                      "order" : 3,
+                      "parentObjectCode" : 729931023,
+                      "rules" : [ {
+                        "conditionDescription" : "Valida",
+                        "conditions" : [ {
+                          "baseAttribute" : "IE_STATUS",
+                          "condition" : "=",
+                          "conditionSeq" : 731434454,
+                          "option" : "ATTRIBUTE WITH VALUE",
+                          "referenceObjectCode" : 712362462,
+                          "scriptReference" : 712362462,
+                          "value" : "EP"
+                        } ],
+                        "nrSeqRule" : 731372678,
+                        "result" : "ENABLED"
+                      } ],
+                      "text" : "Pause",
+                      "topList" : false,
+                      "type" : "STANDARD",
+                      "visible" : true
+                    }, {
+                      "aiContextMenu" : false,
+                      "alignment" : "E",
+                      "children" : [ ],
+                      "code" : 731508700,
+                      "componentType" : "MENUITEM",
+                      "enabled" : true,
+                      "events" : [ {
+                        "eventActions" : [ {
+                          "actionOrder" : 1,
+                          "actionSeq" : 731617327,
+                          "compReactivateCode" : 712362462,
+                          "eventAction" : "PROC",
+                          "multipleBodyItemsSupported" : false,
+                          "params" : [ {
+                            "code" : 731630142,
+                            "masterCode" : 712362462,
+                            "masterName" : "NR_SEQUENCIA",
+                            "originParam" : "OBJECT",
+                            "parameterName" : "NR_COT_COMPRA_P",
+                            "parameterSeq" : 1
+                          }, {
+                            "code" : 731630143,
+                            "defaultValue" : "0",
+                            "originParam" : "DEFAULT",
+                            "parameterName" : "DS_TITULO_P",
+                            "parameterSeq" : 2
+                          }, {
+                            "code" : 731630144,
+                            "defaultValue" : "0",
+                            "originParam" : "DEFAULT",
+                            "parameterName" : "DS_HISTORICO_P",
+                            "parameterSeq" : 3
+                          }, {
+                            "code" : 731630145,
+                            "defaultValue" : "ST",
+                            "originParam" : "DEFAULT",
+                            "parameterName" : "IE_ORIGEM_P",
+                            "parameterSeq" : 4
+                          }, {
+                            "code" : 731630146,
+                            "defaultValue" : "0",
+                            "originParam" : "DEFAULT",
+                            "parameterName" : "NM_USUARIO_P",
+                            "parameterSeq" : 5
+                          } ],
+                          "procedureCode" : 10273,
+                          "reloadLine" : "S"
+                        } ],
+                        "eventSeq" : 731617326,
+                        "eventType" : "C"
+                      } ],
+                      "expressionCode" : 1146077,
+                      "menuCode" : 729931023,
+                      "metadataFile" : false,
+                      "name" : "Desfazer Pausa - Retomar Projeto",
+                      "objectType" : "COMPONENT",
+                      "order" : 4,
+                      "parentObjectCode" : 729931023,
+                      "rules" : [ {
+                        "conditionDescription" : "Validar pausa",
+                        "conditions" : [ {
+                          "baseAttribute" : "IE_STATUS",
+                          "condition" : "=",
+                          "conditionSeq" : 731677498,
+                          "option" : "ATTRIBUTE WITH VALUE",
+                          "referenceObjectCode" : 712362462,
+                          "scriptReference" : 712362462,
+                          "value" : "PS"
+                        } ],
+                        "nrSeqRule" : 731667148,
+                        "result" : "ENABLED"
+                      } ],
+                      "text" : "Desfazer Pausa - Retomar Projeto",
+                      "topList" : false,
+                      "type" : "STANDARD",
+                      "visible" : true
+                    } ],
+                    "objectType" : "COMPONENT",
+                    "parentObjectCode" : 712362462,
+                    "popUpHandle" : "N"
+                  } ],
                   "cmdkMetadataCustomization" : false,
                   "code" : 712362462,
                   "componentType" : "WDBPANEL",
-                  "crudRules" : [ ],
+                  "crudRules" : [ {
+                    "canDelete" : false,
+                    "canDuplicate" : false,
+                    "canInsert" : false,
+                    "canUpdate" : false,
+                    "code" : 732220530,
+                    "rules" : [ {
+                      "conditionDescription" : "Validar liberação",
+                      "conditions" : [ {
+                        "baseAttribute" : "IE_STATUS",
+                        "condition" : "=",
+                        "conditionSeq" : 732241388,
+                        "option" : "ATTRIBUTE WITH VALUE",
+                        "referenceObjectCode" : 712362462,
+                        "scriptReference" : 712362462,
+                        "value" : "AG"
+                      } ],
+                      "ruleSeq" : 732229901
+                    } ]
+                  } ],
                   "customProperties" : {
                     "allowBatchSignature" : "N",
                     "showDynamicReport" : "N",
@@ -40,7 +376,120 @@
                   "description" : "Projeto - DbPanel",
                   "displayOrder" : 1,
                   "isMaster" : true,
-                  "legends" : [ ],
+                  "legends" : [ {
+                    "active" : "S",
+                    "captionDisplayMethod" : "STATUS_TEXT",
+                    "code" : 732446427,
+                    "colors" : [ {
+                      "backgroundColor" : "#FF94DA",
+                      "description" : "Sent",
+                      "expressionCode" : 330894,
+                      "nrSeqApres" : 10,
+                      "nrSequence" : "3410",
+                      "rules" : [ {
+                        "conditionDescription" : "status de pausa",
+                        "conditions" : [ {
+                          "baseAttribute" : "IE_STATUS",
+                          "condition" : "=",
+                          "conditionSeq" : 732699792,
+                          "option" : "ATTRIBUTE WITH VALUE",
+                          "value" : "PS"
+                        } ],
+                        "ruleSeq" : 732697084
+                      } ]
+                    }, {
+                      "backgroundColor" : "#FFED5E",
+                      "description" : "Contains confirmation",
+                      "expressionCode" : 331389,
+                      "nrSeqApres" : 15,
+                      "nrSequence" : "3411",
+                      "rules" : [ ]
+                    }, {
+                      "backgroundColor" : "#00E6C6",
+                      "description" : "Confirmed",
+                      "expressionCode" : 303137,
+                      "nrSeqApres" : 20,
+                      "nrSequence" : "3412",
+                      "rules" : [ {
+                        "conditionDescription" : "status Em processo",
+                        "conditions" : [ {
+                          "baseAttribute" : "IE_STATUS",
+                          "condition" : "=",
+                          "conditionSeq" : 732737992,
+                          "option" : "ATTRIBUTE WITH VALUE",
+                          "value" : "EP"
+                        } ],
+                        "ruleSeq" : 732734765
+                      } ]
+                    }, {
+                      "backgroundColor" : "#7BCC00",
+                      "description" : "Finished",
+                      "expressionCode" : 330970,
+                      "nrSeqApres" : 25,
+                      "nrSequence" : "3413",
+                      "rules" : [ {
+                        "conditionDescription" : "Finalizado",
+                        "conditions" : [ {
+                          "baseAttribute" : "IE_STATUS",
+                          "condition" : "=",
+                          "conditionSeq" : 732862683,
+                          "option" : "ATTRIBUTE WITH VALUE",
+                          "value" : "FN"
+                        } ],
+                        "ruleSeq" : 732855131
+                      } ]
+                    }, {
+                      "backgroundColor" : "#FF9514",
+                      "description" : "Not approved",
+                      "expressionCode" : 331204,
+                      "nrSeqApres" : 30,
+                      "nrSequence" : "4969",
+                      "rules" : [ ]
+                    }, {
+                      "backgroundColor" : "#3465E0",
+                      "description" : "Approved ",
+                      "expressionCode" : 318358,
+                      "nrSeqApres" : 35,
+                      "nrSequence" : "4970",
+                      "rules" : [ {
+                        "conditionDescription" : "status de aprovado",
+                        "conditions" : [ {
+                          "baseAttribute" : "IE_STATUS",
+                          "condition" : "=",
+                          "conditionSeq" : 732664341,
+                          "option" : "ATTRIBUTE WITH VALUE",
+                          "value" : "AP"
+                        } ],
+                        "ruleSeq" : 732652670
+                      } ]
+                    }, {
+                      "backgroundColor" : "#E63535",
+                      "description" : "Disapproved",
+                      "expressionCode" : 331540,
+                      "nrSeqApres" : 100,
+                      "nrSequence" : "4972",
+                      "rules" : [ {
+                        "conditionDescription" : "Aguardando aprovação",
+                        "conditions" : [ {
+                          "baseAttribute" : "IE_STATUS",
+                          "condition" : "=",
+                          "conditionSeq" : 732502566,
+                          "option" : "ATTRIBUTE WITH VALUE",
+                          "value" : "AG"
+                        } ],
+                        "ruleSeq" : 732497145
+                      } ]
+                    } ],
+                    "column" : "N",
+                    "description" : "Cotação de compras",
+                    "displayLebelLegend" : "N",
+                    "displayOrder" : 1,
+                    "icons" : [ ],
+                    "keyAttribute" : "IE_STATUS",
+                    "line" : "S",
+                    "nrSequence" : 681,
+                    "order" : "S"
+                  } ],
                   "masterObjectCode" : 0,
                   "metadataFile" : true,
                   "objectType" : "COMPONENT",
@@ -237,7 +686,78 @@
         "restrictTertiaryLevel" : "N",
         "children" : [ {
           "children" : [ {
-            "children" : [ ],
+            "children" : [ {
+              "children" : [ {
+                "children" : [ {
+                  "checkParentsRelease" : false,
+                  "children" : [ ],
+                  "cmdkMetadataCustomization" : false,
+                  "code" : 733020781,
+                  "componentType" : "WDBPANEL",
+                  "crudRules" : [ ],
+                  "customProperties" : {
+                    "allowBatchSignature" : "N",
+                    "showDynamicReport" : "N",
+                    "withoutCache" : "N"
+                  },
+                  "description" : "sol Compras - DbPanel",
+                  "displayOrder" : 1,
+                  "isMaster" : false,
+                  "legends" : [ ],
+                  "masterObjectCode" : 0,
+                  "metadataFile" : true,
+                  "objectType" : "COMPONENT",
+                  "params" : [ ],
+                  "parentObjectCode" : 733013692,
+                  "properties" : {
+                    "action" : "",
+                    "activateOnDetail" : false,
+                    "autoCreateChild" : false,
+                    "cacheDetailViews" : false,
+                    "checkReportRelease" : true,
+                    "confirmReleaseRecord" : false,
+                    "destroyDetail" : false,
+                    "editableGrid" : false,
+                    "emptyActivation" : false,
+                    "gridWhenSave" : true,
+                    "lazyLoadDetail" : false,
+                    "multiSelection" : false,
+                    "onlyDetail" : false,
+                    "pageSize" : 0,
+                    "paginationType" : "P",
+                    "qtMaxRecord" : 0,
+                    "readOnlyType" : "N",
+                    "reportConfigVisible" : false,
+                    "responsive" : false,
+                    "saveGridColumnOrder" : false,
+                    "selectFirstRow" : false,
+                    "unificarCountRegistros" : true,
+                    "useNewGrid" : true,
+                    "usePagination" : true
+                  },
+                  "reports" : [ ],
+                  "signatureConfigured" : false,
+                  "viewCode" : 733050595
+                } ],
+                "code" : 733013692,
+                "description" : "Region 0",
+                "displayOrder" : 1,
+                "objectType" : "REGION",
+                "parentObjectCode" : 733013691
+              }, {
+                "children" : [ ],
+                "code" : 733013693,
+                "description" : "Region 1",
+                "displayOrder" : 2,
+                "objectType" : "REGION",
+                "parentObjectCode" : 733013691
+              } ],
+              "code" : 733013691,
+              "description" : "Master region",
+              "masterRegionType" : "LAYOUT_B",
+              "objectType" : "MASTER_REGION",
+              "parentObjectCode" : 712391132
+            } ],
             "code" : 712391132,
             "description" : "Panel",
             "displayOrder" : 1,
@@ -256,10 +776,10 @@
         "code" : 712316085,
         "configurable" : true,
         "hasObjSchemRules" : false,
-        "description" : "Elemento PEP",
+        "description" : "Purchase request",
         "displayOrder" : 2,
-        "expressionCode" : 1146058,
-        "expressionDescription" : "Elemento PEP",
+        "expressionCode" : 298643,
+        "expressionDescription" : "Purchase request",
         "objectType" : "DROP_DOWN_MENU",
         "parentObjectCode" : 99700,
         "topList" : false,
@@ -272,7 +792,7 @@
       "parentObjectCode" : 0,
       "version" : "1.7.0",
       "navigatorType" : "DROP_DOWN_MENU",
-      "selectedNavigatorItem" : 712299079
+      "selectedNavigatorItem" : 712316085
     }
   } ],
   "type" : "PARTNER"
