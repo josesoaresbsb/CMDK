@@ -266,7 +266,7 @@
         "tipoAtributo" : "DATE",
         "tooltip" : "Informação gerada automaticamente pelo sistema.",
         "tooltipExpressionCode" : 557610,
-        "vlDefault" : "@SYSDATE"
+        "vlDefault" : "SYSDATE"
       }, {
         "IeTooltip" : false,
         "alinharDireita" : false,
