@@ -888,6 +888,75 @@
         "parentObjectCode" : 99700,
         "topList" : false,
         "visible" : "S"
+      }, {
+        "allowCmdkCustomization" : true,
+        "restrictPrimaryLevel" : "N",
+        "restrictSecondaryLevel" : "N",
+        "restrictTertiaryLevel" : "N",
+        "children" : [ {
+          "children" : [ {
+            "children" : [ {
+              "children" : [ {
+                "children" : [ {
+                  "chartType" : "B",
+                  "children" : [ ],
+                  "code" : 243637687,
+                  "componentType" : "WCHART",
+                  "customProperties" : {
+                    "checkReportRelease" : "S",
+                    "showValue" : "S",
+                    "sortAscending" : "S",
+                    "tooltipGrouped" : "S",
+                    "typeInterval" : "time",
+                    "withZoom" : "N"
+                  },
+                  "description" : "WChart",
+                  "dictionaryCode" : 243731103,
+                  "displayOrder" : 1,
+                  "metadataFile" : true,
+                  "objectType" : "COMPONENT",
+                  "params" : [ ],
+                  "parentObjectCode" : 243371756,
+                  "reports" : [ ]
+                } ],
+                "code" : 243371756,
+                "description" : "Region 0",
+                "displayOrder" : 1,
+                "objectType" : "REGION",
+                "parentObjectCode" : 243371755
+              } ],
+              "code" : 243371755,
+              "description" : "Master region",
+              "masterRegionType" : "LAYOUT_A",
+              "objectType" : "MASTER_REGION",
+              "parentObjectCode" : 243363548
+            } ],
+            "code" : 243363548,
+            "description" : "Panel",
+            "displayOrder" : 1,
+            "expressionCode" : 314879,
+            "expressionDescription" : "Panel",
+            "objectType" : "PANEL",
+            "panelWidth" : 12,
+            "parentObjectCode" : 243363547
+          } ],
+          "code" : 243363547,
+          "componentType" : "WSCH",
+          "description" : "Schematic - 12",
+          "objectType" : "SCHEMATIC",
+          "parentObjectCode" : 243316335
+        } ],
+        "code" : 243316335,
+        "configurable" : true,
+        "hasObjSchemRules" : false,
+        "description" : "Graph",
+        "displayOrder" : 3,
+        "expressionCode" : 290953,
+        "expressionDescription" : "Graph",
+        "objectType" : "DROP_DOWN_MENU",
+        "parentObjectCode" : 99700,
+        "topList" : false,
+        "visible" : "S"
       } ],
       "code" : 99700,
       "componentType" : "WSCH",
@@ -896,7 +965,7 @@
       "parentObjectCode" : 0,
       "version" : "1.7.0",
       "navigatorType" : "DROP_DOWN_MENU",
-      "selectedNavigatorItem" : 712316085
+      "selectedNavigatorItem" : 712299079
     }
   } ],
   "type" : "PARTNER"
